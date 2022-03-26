@@ -22,8 +22,6 @@
 		EFCDD83227EF3DAF003E522F /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD83127EF3DAF003E522F /* DataSource.swift */; };
 		EFCDD84027EF3EC6003E522F /* ConfigurableUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD83F27EF3EC6003E522F /* ConfigurableUI.docc */; };
 		EFCDD84127EF3EC6003E522F /* ConfigurableUI.h in Headers */ = {isa = PBXBuildFile; fileRef = EFCDD83E27EF3EC6003E522F /* ConfigurableUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFCDD84427EF3EC6003E522F /* ConfigurableUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCDD83C27EF3EC6003E522F /* ConfigurableUI.framework */; };
-		EFCDD84527EF3EC6003E522F /* ConfigurableUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFCDD83C27EF3EC6003E522F /* ConfigurableUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFCDD84A27EF3F1B003E522F /*  RowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD83327EF3E30003E522F /*  RowViewModel.swift */; };
 		EFCDD84B27EF3F1D003E522F /* ConfigurableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD83527EF3E55003E522F /* ConfigurableRow.swift */; };
 		EFCDD84F27EF3F8C003E522F /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD84E27EF3F8C003E522F /* UITableView+.swift */; };
@@ -48,8 +46,6 @@
 		EFCDD88527EF6789003E522F /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD88427EF6789003E522F /* NoteTableViewCell.swift */; };
 		EFCDD89127EF6D38003E522F /* PatternFoundation.docc in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD89027EF6D38003E522F /* PatternFoundation.docc */; };
 		EFCDD89227EF6D38003E522F /* PatternFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = EFCDD88F27EF6D38003E522F /* PatternFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFCDD89527EF6D38003E522F /* PatternFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCDD88D27EF6D38003E522F /* PatternFoundation.framework */; };
-		EFCDD89627EF6D38003E522F /* PatternFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFCDD88D27EF6D38003E522F /* PatternFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFCDD89B27EF6D57003E522F /* ViewCyicleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD88627EF6C93003E522F /* ViewCyicleHandler.swift */; };
 		EFCDD89C27EF6D9D003E522F /* PatternFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCDD88D27EF6D38003E522F /* PatternFoundation.framework */; platformFilter = ios; };
 		EFCDD89D27EF6D9D003E522F /* PatternFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFCDD88D27EF6D38003E522F /* PatternFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -67,26 +63,12 @@
 			remoteGlobalIDString = EFCDD80E27EF3AFA003E522F;
 			remoteInfo = RxMVVM;
 		};
-		EFCDD84227EF3EC6003E522F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFCDD7EA27EF3965003E522F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EFCDD83B27EF3EC6003E522F;
-			remoteInfo = ConfigurableUI;
-		};
 		EFCDD85927EF40DF003E522F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EFCDD7EA27EF3965003E522F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EFCDD83B27EF3EC6003E522F;
 			remoteInfo = ConfigurableUI;
-		};
-		EFCDD89327EF6D38003E522F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFCDD7EA27EF3965003E522F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EFCDD88C27EF6D38003E522F;
-			remoteInfo = PatternFoundation;
 		};
 		EFCDD89E27EF6D9D003E522F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -104,9 +86,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EFCDD89627EF6D38003E522F /* PatternFoundation.framework in Embed Frameworks */,
 				EFCDD81827EF3AFA003E522F /* RxMVVM.framework in Embed Frameworks */,
-				EFCDD84527EF3EC6003E522F /* ConfigurableUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,10 +153,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFCDD89527EF6D38003E522F /* PatternFoundation.framework in Frameworks */,
 				EFCDD8AA27EF73CB003E522F /* SnapKit in Frameworks */,
 				EFCDD81727EF3AFA003E522F /* RxMVVM.framework in Frameworks */,
-				EFCDD84427EF3EC6003E522F /* ConfigurableUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +215,6 @@
 			children = (
 				EFCDD8B127EF774E003E522F /* Application */,
 				EFCDD80927EF397A003E522F /* Patterns */,
-				EFCDD7F927EF3965003E522F /* ViewController.swift */,
 				EFCDD7FE27EF3969003E522F /* Assets.xcassets */,
 				EFCDD80027EF3969003E522F /* LaunchScreen.storyboard */,
 				EFCDD80327EF3969003E522F /* Info.plist */,
@@ -248,6 +225,7 @@
 		EFCDD80927EF397A003E522F /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				EFCDD7F927EF3965003E522F /* ViewController.swift */,
 				EFCDD87E27EF670F003E522F /* MVVMExample */,
 			);
 			path = Patterns;
@@ -362,9 +340,9 @@
 		EFCDD87E27EF670F003E522F /* MVVMExample */ = {
 			isa = PBXGroup;
 			children = (
-				EFCDD8A527EF70E7003E522F /* Types */,
-				EFCDD8A227EF7017003E522F /* Services */,
 				EFCDD8A127EF700B003E522F /* Modules */,
+				EFCDD8A227EF7017003E522F /* Services */,
+				EFCDD8A527EF70E7003E522F /* Types */,
 			);
 			path = MVVMExample;
 			sourceTree = "<group>";
@@ -450,7 +428,6 @@
 			isa = PBXGroup;
 			children = (
 				EFCDD81027EF3AFA003E522F /* RxMVVM */,
-				EFCDD83D27EF3EC6003E522F /* ConfigurableUI */,
 			);
 			path = L1;
 			sourceTree = "<group>";
@@ -458,6 +435,7 @@
 		EFCDD8B027EF7739003E522F /* L0 */ = {
 			isa = PBXGroup;
 			children = (
+				EFCDD83D27EF3EC6003E522F /* ConfigurableUI */,
 				EFCDD88E27EF6D38003E522F /* PatternFoundation */,
 			);
 			path = L0;
@@ -515,8 +493,6 @@
 			);
 			dependencies = (
 				EFCDD81627EF3AFA003E522F /* PBXTargetDependency */,
-				EFCDD84327EF3EC6003E522F /* PBXTargetDependency */,
-				EFCDD89427EF6D38003E522F /* PBXTargetDependency */,
 			);
 			name = iOSPatterns;
 			packageProductDependencies = (
@@ -739,21 +715,11 @@
 			target = EFCDD80E27EF3AFA003E522F /* RxMVVM */;
 			targetProxy = EFCDD81527EF3AFA003E522F /* PBXContainerItemProxy */;
 		};
-		EFCDD84327EF3EC6003E522F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EFCDD83B27EF3EC6003E522F /* ConfigurableUI */;
-			targetProxy = EFCDD84227EF3EC6003E522F /* PBXContainerItemProxy */;
-		};
 		EFCDD85A27EF40DF003E522F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			platformFilter = ios;
 			target = EFCDD83B27EF3EC6003E522F /* ConfigurableUI */;
 			targetProxy = EFCDD85927EF40DF003E522F /* PBXContainerItemProxy */;
-		};
-		EFCDD89427EF6D38003E522F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EFCDD88C27EF6D38003E522F /* PatternFoundation */;
-			targetProxy = EFCDD89327EF6D38003E522F /* PBXContainerItemProxy */;
 		};
 		EFCDD89F27EF6D9D003E522F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
