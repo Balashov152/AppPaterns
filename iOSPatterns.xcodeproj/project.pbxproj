@@ -13,7 +13,88 @@
 		EFCDD7FD27EF3965003E522F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCDD7FB27EF3965003E522F /* Main.storyboard */; };
 		EFCDD7FF27EF3969003E522F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCDD7FE27EF3969003E522F /* Assets.xcassets */; };
 		EFCDD80227EF3969003E522F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCDD80027EF3969003E522F /* LaunchScreen.storyboard */; };
+		EFCDD81327EF3AFA003E522F /* RxMVVM.docc in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD81227EF3AFA003E522F /* RxMVVM.docc */; };
+		EFCDD81427EF3AFA003E522F /* RxMVVM.h in Headers */ = {isa = PBXBuildFile; fileRef = EFCDD81127EF3AFA003E522F /* RxMVVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFCDD81727EF3AFA003E522F /* RxMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCDD80F27EF3AFA003E522F /* RxMVVM.framework */; };
+		EFCDD81827EF3AFA003E522F /* RxMVVM.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFCDD80F27EF3AFA003E522F /* RxMVVM.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFCDD81F27EF3B50003E522F /* RxTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD81E27EF3B50003E522F /* RxTableController.swift */; };
+		EFCDD82E27EF3CDC003E522F /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = EFCDD82D27EF3CDC003E522F /* RxDataSources */; };
+		EFCDD83027EF3D1D003E522F /* ReloadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD82F27EF3D1D003E522F /* ReloadViewModel.swift */; };
+		EFCDD83227EF3DAF003E522F /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD83127EF3DAF003E522F /* DataSource.swift */; };
+		EFCDD84027EF3EC6003E522F /* ConfigurableUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD83F27EF3EC6003E522F /* ConfigurableUI.docc */; };
+		EFCDD84127EF3EC6003E522F /* ConfigurableUI.h in Headers */ = {isa = PBXBuildFile; fileRef = EFCDD83E27EF3EC6003E522F /* ConfigurableUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFCDD84427EF3EC6003E522F /* ConfigurableUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCDD83C27EF3EC6003E522F /* ConfigurableUI.framework */; };
+		EFCDD84527EF3EC6003E522F /* ConfigurableUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFCDD83C27EF3EC6003E522F /* ConfigurableUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFCDD84A27EF3F1B003E522F /*  RowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD83327EF3E30003E522F /*  RowViewModel.swift */; };
+		EFCDD84B27EF3F1D003E522F /* ConfigurableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD83527EF3E55003E522F /* ConfigurableRow.swift */; };
+		EFCDD84F27EF3F8C003E522F /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD84E27EF3F8C003E522F /* UITableView+.swift */; };
+		EFCDD85127EF3FA3003E522F /* IdentifiableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD85027EF3FA3003E522F /* IdentifiableView.swift */; };
+		EFCDD85427EF3FD0003E522F /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD85327EF3FD0003E522F /* UICollectionView+.swift */; };
+		EFCDD85727EF40DF003E522F /* ConfigurableUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCDD83C27EF3EC6003E522F /* ConfigurableUI.framework */; platformFilter = ios; };
+		EFCDD85827EF40DF003E522F /* ConfigurableUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFCDD83C27EF3EC6003E522F /* ConfigurableUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFCDD85D27EF4168003E522F /* ConfigureViewModable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD85C27EF4168003E522F /* ConfigureViewModable.swift */; };
+		EFCDD85F27EF4B75003E522F /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD85E27EF4B75003E522F /* RxViewController.swift */; };
+		EFCDD86327EF568F003E522F /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = EFCDD86227EF568F003E522F /* Differentiator */; };
+		EFCDD86627EF59B7003E522F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EFCDD86527EF59B7003E522F /* RxCocoa */; };
+		EFCDD86827EF59B7003E522F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EFCDD86727EF59B7003E522F /* RxSwift */; };
+		EFCDD86B27EF60CD003E522F /* AnimatableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD86A27EF60CD003E522F /* AnimatableViewModel.swift */; };
+		EFCDD86F27EF6103003E522F /* RxAnimatedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD86E27EF6103003E522F /* RxAnimatedTableViewController.swift */; };
+		EFCDD87127EF6135003E522F /* RxReloadTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD87027EF6135003E522F /* RxReloadTableViewController.swift */; };
+		EFCDD87427EF61D3003E522F /* AnimatableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD87327EF61D3003E522F /* AnimatableDataSource.swift */; };
+		EFCDD87727EF63EB003E522F /* RxCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD87627EF63EB003E522F /* RxCollectionViewController.swift */; };
+		EFCDD87927EF65ED003E522F /* RxReloadCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD87827EF65ED003E522F /* RxReloadCollectionViewController.swift */; };
+		EFCDD87B27EF6609003E522F /* RxAnimatedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD87A27EF6609003E522F /* RxAnimatedCollectionViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFCDD81527EF3AFA003E522F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFCDD7EA27EF3965003E522F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFCDD80E27EF3AFA003E522F;
+			remoteInfo = RxMVVM;
+		};
+		EFCDD84227EF3EC6003E522F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFCDD7EA27EF3965003E522F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFCDD83B27EF3EC6003E522F;
+			remoteInfo = ConfigurableUI;
+		};
+		EFCDD85927EF40DF003E522F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFCDD7EA27EF3965003E522F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFCDD83B27EF3EC6003E522F;
+			remoteInfo = ConfigurableUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EFCDD81927EF3AFA003E522F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EFCDD81827EF3AFA003E522F /* RxMVVM.framework in Embed Frameworks */,
+				EFCDD84527EF3EC6003E522F /* ConfigurableUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCDD85B27EF40E0003E522F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EFCDD85827EF40DF003E522F /* ConfigurableUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EFCDD7F227EF3965003E522F /* iOSPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +105,54 @@
 		EFCDD7FE27EF3969003E522F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFCDD80127EF3969003E522F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFCDD80327EF3969003E522F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFCDD80F27EF3AFA003E522F /* RxMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFCDD81127EF3AFA003E522F /* RxMVVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxMVVM.h; sourceTree = "<group>"; };
+		EFCDD81227EF3AFA003E522F /* RxMVVM.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = RxMVVM.docc; sourceTree = "<group>"; };
+		EFCDD81E27EF3B50003E522F /* RxTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableController.swift; sourceTree = "<group>"; };
+		EFCDD82F27EF3D1D003E522F /* ReloadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadViewModel.swift; sourceTree = "<group>"; };
+		EFCDD83127EF3DAF003E522F /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		EFCDD83327EF3E30003E522F /*  RowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " RowViewModel.swift"; sourceTree = "<group>"; };
+		EFCDD83527EF3E55003E522F /* ConfigurableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableRow.swift; sourceTree = "<group>"; };
+		EFCDD83C27EF3EC6003E522F /* ConfigurableUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConfigurableUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFCDD83E27EF3EC6003E522F /* ConfigurableUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigurableUI.h; sourceTree = "<group>"; };
+		EFCDD83F27EF3EC6003E522F /* ConfigurableUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ConfigurableUI.docc; sourceTree = "<group>"; };
+		EFCDD84E27EF3F8C003E522F /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		EFCDD85027EF3FA3003E522F /* IdentifiableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableView.swift; sourceTree = "<group>"; };
+		EFCDD85327EF3FD0003E522F /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		EFCDD85C27EF4168003E522F /* ConfigureViewModable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureViewModable.swift; sourceTree = "<group>"; };
+		EFCDD85E27EF4B75003E522F /* RxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
+		EFCDD86A27EF60CD003E522F /* AnimatableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableViewModel.swift; sourceTree = "<group>"; };
+		EFCDD86E27EF6103003E522F /* RxAnimatedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAnimatedTableViewController.swift; sourceTree = "<group>"; };
+		EFCDD87027EF6135003E522F /* RxReloadTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxReloadTableViewController.swift; sourceTree = "<group>"; };
+		EFCDD87327EF61D3003E522F /* AnimatableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableDataSource.swift; sourceTree = "<group>"; };
+		EFCDD87627EF63EB003E522F /* RxCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewController.swift; sourceTree = "<group>"; };
+		EFCDD87827EF65ED003E522F /* RxReloadCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxReloadCollectionViewController.swift; sourceTree = "<group>"; };
+		EFCDD87A27EF6609003E522F /* RxAnimatedCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAnimatedCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EFCDD7EF27EF3965003E522F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCDD81727EF3AFA003E522F /* RxMVVM.framework in Frameworks */,
+				EFCDD84427EF3EC6003E522F /* ConfigurableUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCDD80C27EF3AFA003E522F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCDD86327EF568F003E522F /* Differentiator in Frameworks */,
+				EFCDD82E27EF3CDC003E522F /* RxDataSources in Frameworks */,
+				EFCDD86827EF59B7003E522F /* RxSwift in Frameworks */,
+				EFCDD86627EF59B7003E522F /* RxCocoa in Frameworks */,
+				EFCDD85727EF40DF003E522F /* ConfigurableUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCDD83927EF3EC6003E522F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +166,10 @@
 			isa = PBXGroup;
 			children = (
 				EFCDD7F427EF3965003E522F /* iOSPatterns */,
+				EFCDD81027EF3AFA003E522F /* RxMVVM */,
+				EFCDD83D27EF3EC6003E522F /* ConfigurableUI */,
 				EFCDD7F327EF3965003E522F /* Products */,
+				EFCDD82527EF3C0E003E522F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				EFCDD7F227EF3965003E522F /* iOSPatterns.app */,
+				EFCDD80F27EF3AFA003E522F /* RxMVVM.framework */,
+				EFCDD83C27EF3EC6003E522F /* ConfigurableUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,11 +201,160 @@
 		EFCDD80927EF397A003E522F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EFCDD87E27EF670F003E522F /* MVVMExample */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		EFCDD81027EF3AFA003E522F /* RxMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDD81D27EF3B01003E522F /* Main */,
+				EFCDD81127EF3AFA003E522F /* RxMVVM.h */,
+				EFCDD81227EF3AFA003E522F /* RxMVVM.docc */,
+			);
+			path = RxMVVM;
+			sourceTree = "<group>";
+		};
+		EFCDD81D27EF3B01003E522F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDD87D27EF66DD003E522F /* Controllers */,
+				EFCDD87C27EF66D5003E522F /* Helpers */,
+				EFCDD86D27EF60F6003E522F /* ViewModels */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EFCDD82527EF3C0E003E522F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFCDD83D27EF3EC6003E522F /* ConfigurableUI */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDD84927EF3F0E003E522F /* Main */,
+				EFCDD83E27EF3EC6003E522F /* ConfigurableUI.h */,
+				EFCDD83F27EF3EC6003E522F /* ConfigurableUI.docc */,
+			);
+			path = ConfigurableUI;
+			sourceTree = "<group>";
+		};
+		EFCDD84927EF3F0E003E522F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDD85027EF3FA3003E522F /* IdentifiableView.swift */,
+				EFCDD83527EF3E55003E522F /* ConfigurableRow.swift */,
+				EFCDD83327EF3E30003E522F /*  RowViewModel.swift */,
+				EFCDD84E27EF3F8C003E522F /* UITableView+.swift */,
+				EFCDD85327EF3FD0003E522F /* UICollectionView+.swift */,
+				EFCDD85627EF3FDF003E522F /* UITableView */,
+				EFCDD85227EF3FC9003E522F /* UICollectionView */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EFCDD85227EF3FC9003E522F /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		EFCDD85627EF3FDF003E522F /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		EFCDD86927EF60C5003E522F /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDD81E27EF3B50003E522F /* RxTableController.swift */,
+				EFCDD87027EF6135003E522F /* RxReloadTableViewController.swift */,
+				EFCDD86E27EF6103003E522F /* RxAnimatedTableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		EFCDD86D27EF60F6003E522F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDD86A27EF60CD003E522F /* AnimatableViewModel.swift */,
+				EFCDD82F27EF3D1D003E522F /* ReloadViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EFCDD87227EF61C6003E522F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDD83127EF3DAF003E522F /* DataSource.swift */,
+				EFCDD87327EF61D3003E522F /* AnimatableDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		EFCDD87527EF63DE003E522F /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDD87627EF63EB003E522F /* RxCollectionViewController.swift */,
+				EFCDD87827EF65ED003E522F /* RxReloadCollectionViewController.swift */,
+				EFCDD87A27EF6609003E522F /* RxAnimatedCollectionViewController.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		EFCDD87C27EF66D5003E522F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDD85C27EF4168003E522F /* ConfigureViewModable.swift */,
+				EFCDD87227EF61C6003E522F /* DataSource */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EFCDD87D27EF66DD003E522F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDD85E27EF4B75003E522F /* RxViewController.swift */,
+				EFCDD87527EF63DE003E522F /* CollectionView */,
+				EFCDD86927EF60C5003E522F /* TableView */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EFCDD87E27EF670F003E522F /* MVVMExample */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MVVMExample;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EFCDD80A27EF3AFA003E522F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCDD81427EF3AFA003E522F /* RxMVVM.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCDD83727EF3EC6003E522F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCDD84127EF3EC6003E522F /* ConfigurableUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		EFCDD7F127EF3965003E522F /* iOSPatterns */ = {
@@ -85,15 +364,64 @@
 				EFCDD7EE27EF3965003E522F /* Sources */,
 				EFCDD7EF27EF3965003E522F /* Frameworks */,
 				EFCDD7F027EF3965003E522F /* Resources */,
+				EFCDD81927EF3AFA003E522F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFCDD81627EF3AFA003E522F /* PBXTargetDependency */,
+				EFCDD84327EF3EC6003E522F /* PBXTargetDependency */,
+			);
+			name = iOSPatterns;
+			packageProductDependencies = (
+			);
+			productName = iOSPatterns;
+			productReference = EFCDD7F227EF3965003E522F /* iOSPatterns.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFCDD80E27EF3AFA003E522F /* RxMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFCDD81C27EF3AFA003E522F /* Build configuration list for PBXNativeTarget "RxMVVM" */;
+			buildPhases = (
+				EFCDD80A27EF3AFA003E522F /* Headers */,
+				EFCDD80B27EF3AFA003E522F /* Sources */,
+				EFCDD80C27EF3AFA003E522F /* Frameworks */,
+				EFCDD80D27EF3AFA003E522F /* Resources */,
+				EFCDD85B27EF40E0003E522F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFCDD85A27EF40DF003E522F /* PBXTargetDependency */,
+			);
+			name = RxMVVM;
+			packageProductDependencies = (
+				EFCDD82D27EF3CDC003E522F /* RxDataSources */,
+				EFCDD86227EF568F003E522F /* Differentiator */,
+				EFCDD86527EF59B7003E522F /* RxCocoa */,
+				EFCDD86727EF59B7003E522F /* RxSwift */,
+			);
+			productName = RxMVVM;
+			productReference = EFCDD80F27EF3AFA003E522F /* RxMVVM.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EFCDD83B27EF3EC6003E522F /* ConfigurableUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFCDD84627EF3EC6003E522F /* Build configuration list for PBXNativeTarget "ConfigurableUI" */;
+			buildPhases = (
+				EFCDD83727EF3EC6003E522F /* Headers */,
+				EFCDD83827EF3EC6003E522F /* Sources */,
+				EFCDD83927EF3EC6003E522F /* Frameworks */,
+				EFCDD83A27EF3EC6003E522F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = iOSPatterns;
-			productName = iOSPatterns;
-			productReference = EFCDD7F227EF3965003E522F /* iOSPatterns.app */;
-			productType = "com.apple.product-type.application";
+			name = ConfigurableUI;
+			productName = ConfigurableUI;
+			productReference = EFCDD83C27EF3EC6003E522F /* ConfigurableUI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -108,6 +436,12 @@
 					EFCDD7F127EF3965003E522F = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
+					EFCDD80E27EF3AFA003E522F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					EFCDD83B27EF3EC6003E522F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 				};
 			};
 			buildConfigurationList = EFCDD7ED27EF3965003E522F /* Build configuration list for PBXProject "iOSPatterns" */;
@@ -119,11 +453,17 @@
 				Base,
 			);
 			mainGroup = EFCDD7E927EF3965003E522F;
+			packageReferences = (
+				EFCDD82A27EF3CDC003E522F /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				EFCDD86427EF59B7003E522F /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = EFCDD7F327EF3965003E522F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EFCDD7F127EF3965003E522F /* iOSPatterns */,
+				EFCDD80E27EF3AFA003E522F /* RxMVVM */,
+				EFCDD83B27EF3EC6003E522F /* ConfigurableUI */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +476,20 @@
 				EFCDD80227EF3969003E522F /* LaunchScreen.storyboard in Resources */,
 				EFCDD7FF27EF3969003E522F /* Assets.xcassets in Resources */,
 				EFCDD7FD27EF3965003E522F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCDD80D27EF3AFA003E522F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCDD83A27EF3EC6003E522F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +506,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFCDD80B27EF3AFA003E522F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCDD81F27EF3B50003E522F /* RxTableController.swift in Sources */,
+				EFCDD81327EF3AFA003E522F /* RxMVVM.docc in Sources */,
+				EFCDD86F27EF6103003E522F /* RxAnimatedTableViewController.swift in Sources */,
+				EFCDD87B27EF6609003E522F /* RxAnimatedCollectionViewController.swift in Sources */,
+				EFCDD87427EF61D3003E522F /* AnimatableDataSource.swift in Sources */,
+				EFCDD85F27EF4B75003E522F /* RxViewController.swift in Sources */,
+				EFCDD86B27EF60CD003E522F /* AnimatableViewModel.swift in Sources */,
+				EFCDD87127EF6135003E522F /* RxReloadTableViewController.swift in Sources */,
+				EFCDD87727EF63EB003E522F /* RxCollectionViewController.swift in Sources */,
+				EFCDD83227EF3DAF003E522F /* DataSource.swift in Sources */,
+				EFCDD85D27EF4168003E522F /* ConfigureViewModable.swift in Sources */,
+				EFCDD87927EF65ED003E522F /* RxReloadCollectionViewController.swift in Sources */,
+				EFCDD83027EF3D1D003E522F /* ReloadViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCDD83827EF3EC6003E522F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCDD84A27EF3F1B003E522F /*  RowViewModel.swift in Sources */,
+				EFCDD84027EF3EC6003E522F /* ConfigurableUI.docc in Sources */,
+				EFCDD84F27EF3F8C003E522F /* UITableView+.swift in Sources */,
+				EFCDD85127EF3FA3003E522F /* IdentifiableView.swift in Sources */,
+				EFCDD85427EF3FD0003E522F /* UICollectionView+.swift in Sources */,
+				EFCDD84B27EF3F1D003E522F /* ConfigurableRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFCDD81627EF3AFA003E522F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFCDD80E27EF3AFA003E522F /* RxMVVM */;
+			targetProxy = EFCDD81527EF3AFA003E522F /* PBXContainerItemProxy */;
+		};
+		EFCDD84327EF3EC6003E522F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFCDD83B27EF3EC6003E522F /* ConfigurableUI */;
+			targetProxy = EFCDD84227EF3EC6003E522F /* PBXContainerItemProxy */;
+		};
+		EFCDD85A27EF40DF003E522F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = EFCDD83B27EF3EC6003E522F /* ConfigurableUI */;
+			targetProxy = EFCDD85927EF40DF003E522F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EFCDD7FB27EF3965003E522F /* Main.storyboard */ = {
@@ -293,6 +699,7 @@
 		EFCDD80727EF3969003E522F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -321,6 +728,7 @@
 		EFCDD80827EF3969003E522F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -346,6 +754,134 @@
 			};
 			name = Release;
 		};
+		EFCDD81A27EF3AFA003E522F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6XNMN66Z79;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba1ashov.RxMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EFCDD81B27EF3AFA003E522F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6XNMN66Z79;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba1ashov.RxMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EFCDD84727EF3EC6003E522F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6XNMN66Z79;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba1ashov.ConfigurableUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EFCDD84827EF3EC6003E522F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6XNMN66Z79;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba1ashov.ConfigurableUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -367,7 +903,67 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		EFCDD81C27EF3AFA003E522F /* Build configuration list for PBXNativeTarget "RxMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFCDD81A27EF3AFA003E522F /* Debug */,
+				EFCDD81B27EF3AFA003E522F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFCDD84627EF3EC6003E522F /* Build configuration list for PBXNativeTarget "ConfigurableUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFCDD84727EF3EC6003E522F /* Debug */,
+				EFCDD84827EF3EC6003E522F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EFCDD82A27EF3CDC003E522F /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		EFCDD86427EF59B7003E522F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EFCDD82D27EF3CDC003E522F /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFCDD82A27EF3CDC003E522F /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		EFCDD86227EF568F003E522F /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFCDD82A27EF3CDC003E522F /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		EFCDD86527EF59B7003E522F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFCDD86427EF59B7003E522F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		EFCDD86727EF59B7003E522F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFCDD86427EF59B7003E522F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EFCDD7EA27EF3965003E522F /* Project object */;
 }
