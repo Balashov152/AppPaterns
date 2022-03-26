@@ -10,20 +10,21 @@ import RxDataSources
 import RxSwift
 import UIKit
 
-class RxAnimatedTableViewController<ViewModel: AnimatableViewModel>: RxTableController<ViewModel> {
+open class RxAnimatedTableViewController<ViewModel: RxViewModel & AnimatableViewModel>: RxTableController<ViewModel> {
     open var animationConfiguration: AnimationConfiguration {
         AnimationConfiguration(insertAnimation: .fade, reloadAnimation: .fade, deleteAnimation: .fade)
     }
 
-    public lazy var dataSource = AnimatableDataSource<ViewModel.Section, ViewModel.Item>.TableView.animated(
+    open lazy var dataSource = AnimatableDataSource<ViewModel.Section, ViewModel.Item>.TableView.animated(
         animationConfiguration: animationConfiguration
     )
     
-    public var dataSourceBinding: Disposable?
+    open var dataSourceBinding: Disposable?
     
-    override func setupBindings() {
+    open override func setupBindings() {
         super.setupBindings()
-        dataSourceBinding = viewModel.sections.asDriver()
+        dataSourceBinding = viewModel.sections
+            .asDriver()
             .drive(tableView.rx.items(dataSource: dataSource))
     }
 }

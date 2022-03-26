@@ -9,13 +9,14 @@ import RxDataSources
 import RxSwift
 import UIKit
 
-public class RxReloadCollectionViewController<ViewModel: ReloadViewModel>: RxCollectionViewController<ViewModel> {
+public class RxReloadCollectionViewController<ViewModel: RxViewModel & ReloadViewModel>: RxCollectionViewController<ViewModel> {
     public lazy var dataSource = DataSource<ViewModel.Section, ViewModel.Item>.CollectionView.reload()
     public var dataSourceBinding: Disposable?
     
-    override func setupBindings() {
+    public override func setupBindings() {
         super.setupBindings()
-        dataSourceBinding = viewModel.sections.asDriver()
+        dataSourceBinding = viewModel.sections
+            .asDriver(onErrorJustReturn: [])
             .drive(collectionView.rx.items(dataSource: dataSource))
     }
 }

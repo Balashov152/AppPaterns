@@ -9,7 +9,7 @@ import RxDataSources
 import RxSwift
 import UIKit
 
-public class RxAnimatedCollectionViewController<ViewModel: AnimatableViewModel>: RxCollectionViewController<ViewModel> {
+public class RxAnimatedCollectionViewController<ViewModel: RxViewModel & AnimatableViewModel>: RxCollectionViewController<ViewModel> {
     open var animationConfiguration: AnimationConfiguration {
         AnimationConfiguration(insertAnimation: .fade, reloadAnimation: .fade, deleteAnimation: .fade)
     }
@@ -20,9 +20,10 @@ public class RxAnimatedCollectionViewController<ViewModel: AnimatableViewModel>:
     
     public var dataSourceBinding: Disposable?
 
-    override func setupBindings() {
+    public override func setupBindings() {
         super.setupBindings()
-        dataSourceBinding = viewModel.sections.asDriver()
+        dataSourceBinding = viewModel.sections
+            .asDriver(onErrorJustReturn: [])
             .drive(collectionView.rx.items(dataSource: dataSource))
     }
 }

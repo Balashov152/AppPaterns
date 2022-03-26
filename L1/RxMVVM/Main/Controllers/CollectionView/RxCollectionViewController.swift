@@ -9,8 +9,8 @@ import RxDataSources
 import RxSwift
 import UIKit
 
-public class RxCollectionViewController<ViewModel>: RxViewController<ViewModel> {
-    lazy var refreshControl: UIRefreshControl = {
+open class RxCollectionViewController<ViewModel: RxViewModel>: RxViewController<ViewModel> {
+    open lazy var refreshControl: UIRefreshControl = {
         let control = UIRefreshControl()
         collectionView.refreshControl = control
         return control
@@ -25,14 +25,14 @@ public class RxCollectionViewController<ViewModel>: RxViewController<ViewModel> 
         return layout
     }()
     
-    lazy var collectionView: UICollectionView = {
+    open lazy var collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: view.frame, collectionViewLayout: collectionViewLayout)
         collectionView.keyboardDismissMode = .interactive
         collectionView.backgroundColor = .white
         return collectionView
     }()
 
-    override func loadView() {
+    open override func loadView() {
         super.loadView()
         view = collectionView
     }

@@ -7,8 +7,11 @@
 
 import RxSwift
 import UIKit
+import PatternFoundation
 
-open class RxViewController<ViewModel>: UIViewController {
+public typealias RxViewModel = ViewCyicleHandler
+
+open class RxViewController<ViewModel: RxViewModel>: UIViewController {
     public let viewModel: ViewModel
     
     public init(viewModel: ViewModel) {
@@ -39,7 +42,29 @@ open class RxViewController<ViewModel>: UIViewController {
     
     override open func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.viewDidLoad()
+
         setupBindings()
+    }
+    
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.viewWillAppear(animated)
+    }
+
+    open override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        viewModel.viewDidAppear(animated)
+    }
+
+    open override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        viewModel.viewWillDisappear(animated)
+    }
+
+    open override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        viewModel.viewDidDisappear(animated)
     }
 
     open func setupBindings() {}
