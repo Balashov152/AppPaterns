@@ -12,8 +12,18 @@ import RxSwift
 import PatternFoundation
 import ConfigurableUI
 
-class NotesViewModel: ReloadViewModel {
-    typealias SectionModel = CustomSectionModel<String, NoteTableViewCellViewModel>
+typealias NotesViewModelInterface = (
+    NotesViewModelType &
+    AnimatableViewModel &
+    ViewCyicleHandler
+)
+
+protocol NotesViewModelType {
+    func shakeData()
+}
+
+class NotesViewModel: NotesViewModelInterface {
+    typealias SectionModel = CustomAnimatableSectionModel<String, NoteTableViewCellViewModel>
     
     // MARK: - Dependencies
     
@@ -27,10 +37,9 @@ class NotesViewModel: ReloadViewModel {
     init(storage: StorageServicing) {
         self.storage = storage
     }
-}
 
-extension NotesViewModel: ViewCyicleHandler {
-    func viewDidLoad() {
+    
+    func updateData() {
         storage.getNotes()
             .observe(on: ConcurrentDispatchQueueScheduler(queue: .global()))
             .map { notes -> [SectionModel] in
@@ -41,6 +50,22 @@ extension NotesViewModel: ViewCyicleHandler {
             }
             .bind(to: sections)
             .disposed(by: disposeBag)
+    }
+}
+
+// MARK: - NotesViewModelType
+
+extension NotesViewModel {
+    func shakeData() {
+        updateData()
+    }
+}
+
+// MARK: - ViewCyicleHandler
+
+extension NotesViewModel {
+    func viewDidLoad() {
+        updateData()
     }
 }
 

@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     @objc func openMVVMExample() {
         let storage = StorageService()
         let viewModel = NotesViewModel(storage: storage)
-        let vc = NotesViewController(viewModel: viewModel)
+        let vc = NotesViewController<NotesViewModel>(viewModel: viewModel)
         
         navigationController?.pushViewController(vc, animated: true)
     }

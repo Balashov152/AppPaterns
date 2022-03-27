@@ -10,10 +10,13 @@ import UIKit
 import SnapKit
 import ConfigurableUI
 import PatternFoundation
+import RxMVVM
 
-struct NoteTableViewCellViewModel: RowViewModel {
+struct NoteTableViewCellViewModel: AnimatableItem {
     typealias Cell = NoteTableViewCell
     
+    var identity: String { text }
+
     let text: String
 }
 
