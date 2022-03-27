@@ -10,10 +10,7 @@ import RxCocoa
 import ConfigurableUI
 
 public protocol AnimatableViewModel: AnyObject {
-    associatedtype Section: IdentifiableType
-    associatedtype Item: RowViewModel & IdentifiableType & Equatable
-    
-    typealias SectionModel = RxDataSources.AnimatableSectionModel<Section, Item>
-        
+    associatedtype SectionModel: CustomAnimatableSectionModelType
+
     var sections: BehaviorRelay<[SectionModel]> { get }
 }

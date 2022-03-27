@@ -14,7 +14,7 @@ public class RxAnimatedCollectionViewController<ViewModel: RxViewModel & Animata
         AnimationConfiguration(insertAnimation: .fade, reloadAnimation: .fade, deleteAnimation: .fade)
     }
 
-    public lazy var dataSource = AnimatableDataSource<ViewModel.Section, ViewModel.Item>.CollectionView.animated(
+    public lazy var dataSource = AnimatableDataSource<ViewModel.SectionModel>.CollectionView.animated(
         animationConfiguration: animationConfiguration
     )
     

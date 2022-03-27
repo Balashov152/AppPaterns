@@ -10,20 +10,19 @@ import RxMVVM
 import RxCocoa
 import RxSwift
 import PatternFoundation
+import ConfigurableUI
 
 class NotesViewModel: ReloadViewModel {
+    typealias SectionModel = CustomSectionModel<String, NoteTableViewCellViewModel>
     
     // MARK: - Dependencies
     
     private let storage: StorageServicing
     
     // MARK: - Enviroment
-    
-    typealias Section = String
-    typealias Item = NoteTableViewCellViewModel
-    
+
     var sections: BehaviorRelay<[SectionModel]> = .init(value: [])
-    var disposeBag = DisposeBag()
+    private var disposeBag = DisposeBag()
     
     init(storage: StorageServicing) {
         self.storage = storage

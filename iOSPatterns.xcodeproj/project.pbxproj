@@ -53,6 +53,10 @@
 		EFCDD8A727EF70F1003E522F /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD8A627EF70F1003E522F /* Note.swift */; };
 		EFCDD8AA27EF73CB003E522F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EFCDD8A927EF73CB003E522F /* SnapKit */; };
 		EFCDD8AE27EF7659003E522F /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD8AD27EF7659003E522F /* BaseTableViewCell.swift */; };
+		EFCDD8B627F08152003E522F /* CustomSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD8B527F08152003E522F /* CustomSectionModel.swift */; };
+		EFCDD8B827F08174003E522F /* CustomSectionModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD8B727F08174003E522F /* CustomSectionModelType.swift */; };
+		EFCDD8BA27F084D6003E522F /* CustomAnimatableSectionModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD8B927F084D6003E522F /* CustomAnimatableSectionModelType.swift */; };
+		EFCDD8BC27F084EE003E522F /* CustomAnimatableSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD8BB27F084ED003E522F /* CustomAnimatableSectionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +150,10 @@
 		EFCDD8A327EF7037003E522F /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		EFCDD8A627EF70F1003E522F /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		EFCDD8AD27EF7659003E522F /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		EFCDD8B527F08152003E522F /* CustomSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSectionModel.swift; sourceTree = "<group>"; };
+		EFCDD8B727F08174003E522F /* CustomSectionModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSectionModelType.swift; sourceTree = "<group>"; };
+		EFCDD8B927F084D6003E522F /* CustomAnimatableSectionModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimatableSectionModelType.swift; sourceTree = "<group>"; };
+		EFCDD8BB27F084ED003E522F /* CustomAnimatableSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimatableSectionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +252,8 @@
 		EFCDD81D27EF3B01003E522F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EFCDD8BD27F0850A003E522F /* Interfaces */,
+				EFCDD8B427F08126003E522F /* Types */,
 				EFCDD87D27EF66DD003E522F /* Controllers */,
 				EFCDD87C27EF66D5003E522F /* Helpers */,
 				EFCDD86D27EF60F6003E522F /* ViewModels */,
@@ -448,6 +458,24 @@
 				EFCDD7F727EF3965003E522F /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		EFCDD8B427F08126003E522F /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDD8BB27F084ED003E522F /* CustomAnimatableSectionModel.swift */,
+				EFCDD8B527F08152003E522F /* CustomSectionModel.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		EFCDD8BD27F0850A003E522F /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDD8B927F084D6003E522F /* CustomAnimatableSectionModelType.swift */,
+				EFCDD8B727F08174003E522F /* CustomSectionModelType.swift */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -670,14 +698,18 @@
 			files = (
 				EFCDD81F27EF3B50003E522F /* RxTableController.swift in Sources */,
 				EFCDD81327EF3AFA003E522F /* RxMVVM.docc in Sources */,
+				EFCDD8BA27F084D6003E522F /* CustomAnimatableSectionModelType.swift in Sources */,
 				EFCDD86F27EF6103003E522F /* RxAnimatedTableViewController.swift in Sources */,
+				EFCDD8B627F08152003E522F /* CustomSectionModel.swift in Sources */,
 				EFCDD87B27EF6609003E522F /* RxAnimatedCollectionViewController.swift in Sources */,
 				EFCDD87427EF61D3003E522F /* AnimatableDataSource.swift in Sources */,
 				EFCDD85F27EF4B75003E522F /* RxViewController.swift in Sources */,
 				EFCDD86B27EF60CD003E522F /* AnimatableViewModel.swift in Sources */,
 				EFCDD87127EF6135003E522F /* RxReloadTableViewController.swift in Sources */,
+				EFCDD8B827F08174003E522F /* CustomSectionModelType.swift in Sources */,
 				EFCDD87727EF63EB003E522F /* RxCollectionViewController.swift in Sources */,
 				EFCDD83227EF3DAF003E522F /* DataSource.swift in Sources */,
+				EFCDD8BC27F084EE003E522F /* CustomAnimatableSectionModel.swift in Sources */,
 				EFCDD85D27EF4168003E522F /* ConfigureViewModable.swift in Sources */,
 				EFCDD87927EF65ED003E522F /* RxReloadCollectionViewController.swift in Sources */,
 				EFCDD83027EF3D1D003E522F /* ReloadViewModel.swift in Sources */,

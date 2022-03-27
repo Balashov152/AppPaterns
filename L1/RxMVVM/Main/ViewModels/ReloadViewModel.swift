@@ -10,10 +10,7 @@ import RxCocoa
 import ConfigurableUI
 
 public protocol ReloadViewModel: AnyObject {
-    associatedtype Section
-    associatedtype Item: RowViewModel
-    
-    typealias SectionModel = RxDataSources.SectionModel<Section, Item>
+    associatedtype SectionModel: CustomSectionModelType
         
     var sections: BehaviorRelay<[SectionModel]> { get }
 }

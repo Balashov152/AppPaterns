@@ -9,33 +9,29 @@ import Foundation
 import RxDataSources
 import ConfigurableUI
 
-public enum AnimatableDataSource<Section: IdentifiableType, Item: RowViewModel & IdentifiableType & Equatable> {
+public enum AnimatableDataSource<SectionModel: CustomAnimatableSectionModelType> {
     public enum TableView {
-        public typealias TableViewSection = AnimatableSectionModel<Section, Item>
-        
         static func animated(
             animationConfiguration: AnimationConfiguration? = nil
-        ) -> RxTableViewSectionedAnimatedDataSource<TableViewSection> {
+        ) -> RxTableViewSectionedAnimatedDataSource<SectionModel> {
             let animationConfiguration = animationConfiguration ?? AnimationConfiguration()
             
-            return RxTableViewSectionedAnimatedDataSource<TableViewSection>(
+            return RxTableViewSectionedAnimatedDataSource<SectionModel>(
                 animationConfiguration: animationConfiguration,
-                configureCell: ConfigureViewModable<TableViewSection>().configureCell
+                configureCell: ConfigureViewModable<SectionModel>().configureCell
             )
         }
     }
     
     public struct CollectionView {
-        public typealias CollectionViewSection = AnimatableSectionModel<Section, Item>
-        
         public static func animated(
             animationConfiguration: AnimationConfiguration? = nil
-        ) -> RxCollectionViewSectionedAnimatedDataSource<CollectionViewSection> {
+        ) -> RxCollectionViewSectionedAnimatedDataSource<SectionModel> {
             
             let animationConfiguration = animationConfiguration ?? AnimationConfiguration()
-            return RxCollectionViewSectionedAnimatedDataSource<CollectionViewSection>(
+            return RxCollectionViewSectionedAnimatedDataSource<SectionModel>(
                 animationConfiguration: animationConfiguration,
-                configureCell: ConfigureViewModable<CollectionViewSection>().collectionConfigureCell
+                configureCell: ConfigureViewModable<SectionModel>().collectionConfigureCell
             )
         }
     }

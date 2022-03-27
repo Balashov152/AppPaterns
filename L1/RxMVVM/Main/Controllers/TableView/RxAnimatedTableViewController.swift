@@ -15,7 +15,7 @@ open class RxAnimatedTableViewController<ViewModel: RxViewModel & AnimatableView
         AnimationConfiguration(insertAnimation: .fade, reloadAnimation: .fade, deleteAnimation: .fade)
     }
 
-    open lazy var dataSource = AnimatableDataSource<ViewModel.Section, ViewModel.Item>.TableView.animated(
+    open lazy var dataSource = AnimatableDataSource<ViewModel.SectionModel>.TableView.animated(
         animationConfiguration: animationConfiguration
     )
     
