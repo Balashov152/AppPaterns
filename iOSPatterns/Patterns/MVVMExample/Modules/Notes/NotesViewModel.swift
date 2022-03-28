@@ -37,7 +37,6 @@ class NotesViewModel: NotesViewModelInterface {
     init(storage: StorageServicing) {
         self.storage = storage
     }
-
     
     func updateData() {
         storage.getNotes()
