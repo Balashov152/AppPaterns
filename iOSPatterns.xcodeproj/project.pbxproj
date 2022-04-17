@@ -348,6 +348,13 @@
 			path = PatternModels;
 			sourceTree = "<group>";
 		};
+		EFA373EE280C8401003E6E2E /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
 		EFCDD7E927EF3965003E522F = {
 			isa = PBXGroup;
 			children = (
@@ -390,7 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				EFCDD7F927EF3965003E522F /* RootViewController.swift */,
-				EFCDD87E27EF670F003E522F /* MVVMExample */,
+				EFCDD8A127EF700B003E522F /* Modules */,
 			);
 			path = Patterns;
 			sourceTree = "<group>";
@@ -503,12 +510,12 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		EFCDD87E27EF670F003E522F /* MVVMExample */ = {
+		EFCDD87E27EF670F003E522F /* MVVM+Rx */ = {
 			isa = PBXGroup;
 			children = (
-				EFCDD8A127EF700B003E522F /* Modules */,
+				EFCDD8A027EF6FFD003E522F /* Notes */,
 			);
-			path = MVVMExample;
+			path = "MVVM+Rx";
 			sourceTree = "<group>";
 		};
 		EFCDD88327EF6779003E522F /* Cells */ = {
@@ -551,7 +558,8 @@
 		EFCDD8A127EF700B003E522F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				EFCDD8A027EF6FFD003E522F /* Notes */,
+				EFA373EE280C8401003E6E2E /* VIPER */,
+				EFCDD87E27EF670F003E522F /* MVVM+Rx */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
