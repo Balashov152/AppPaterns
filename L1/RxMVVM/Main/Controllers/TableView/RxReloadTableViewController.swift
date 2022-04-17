@@ -12,8 +12,8 @@ import UIKit
 open class RxReloadTableViewController<ViewModel: RxViewModel & ReloadViewModel>: RxTableController<ViewModel> {
     open var dataSource = DataSource<ViewModel.SectionModel>.TableView.reload()
     open var dataSourceBinding: Disposable?
-    
-    open override func setupBindings() {
+
+    override open func setupBindings() {
         super.setupBindings()
         dataSourceBinding = viewModel.sections
             .asDriver()

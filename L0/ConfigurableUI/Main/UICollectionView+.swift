@@ -17,7 +17,7 @@ public extension UICollectionView {
     func dequeueReusableCell<T>(_ type: T.Type, for indexPath: IndexPath) -> T where T: IdentifiableView {
         dequeueReusableCell(withReuseIdentifier: type.identifier, for: indexPath) as! T
     }
-    
+
     func dequeueConfigurableCell<T: RowViewModel>(viewModel: T, for indexPath: IndexPath) -> some ConfigurableRow {
         let cell = dequeueReusableCell(viewModel.cellType, for: indexPath)
 

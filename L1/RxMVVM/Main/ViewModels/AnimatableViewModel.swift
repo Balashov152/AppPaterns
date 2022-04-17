@@ -5,9 +5,9 @@
 //  Created by Sergey Balashov on 26.03.2022.
 //
 
-import RxDataSources
-import RxCocoa
 import ConfigurableUI
+import RxCocoa
+import RxDataSources
 
 public protocol AnimatableViewModel: AnyObject {
     associatedtype SectionModel: CustomAnimatableSectionModelType

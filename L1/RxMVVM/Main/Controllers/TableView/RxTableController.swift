@@ -12,13 +12,13 @@ import UIKit
 
 open class RxTableController<ViewModel: RxViewModel>: RxViewController<ViewModel> {
     open var tableViewStyle: UITableView.Style { .plain }
-    
+
     open lazy var refreshControl: UIRefreshControl = {
         let control = UIRefreshControl()
         tableView.refreshControl = control
         return control
     }()
-    
+
     open lazy var tableView: UITableView = {
         let tableView = UITableView(frame: view.frame, style: tableViewStyle)
         tableView.tableFooterView = UIView()
@@ -29,7 +29,7 @@ open class RxTableController<ViewModel: RxViewModel>: RxViewController<ViewModel
         return tableView
     }()
 
-    open override func loadView() {
+    override open func loadView() {
         super.loadView()
         view = tableView
     }

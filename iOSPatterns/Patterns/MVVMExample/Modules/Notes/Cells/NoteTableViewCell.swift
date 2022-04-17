@@ -5,16 +5,16 @@
 //  Created by Sergey Balashov on 26.03.2022.
 //
 
-import Foundation
-import UIKit
-import SnapKit
 import ConfigurableUI
+import Foundation
 import PatternFoundation
 import RxMVVM
+import SnapKit
+import UIKit
 
 struct NoteTableViewCellViewModel: AnimatableItem {
     typealias Cell = NoteTableViewCell
-    
+
     var identity: String { text }
 
     let text: String
@@ -26,7 +26,7 @@ class NoteTableViewCell: BaseTableViewCell {
         // Any customize here
         return label
     }()
-    
+
     override func setupUI() {
         contentView.addSubview(label)
         label.snp.makeConstraints { make in

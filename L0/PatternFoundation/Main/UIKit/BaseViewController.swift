@@ -9,17 +9,16 @@ import Foundation
 import UIKit
 
 open class BaseViewController: UIViewController {
-    
     public convenience init() {
         self.init(nibName: nil, bundle: nil)
     }
-    
-    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+
+    override public init(nibName _: String?, bundle _: Bundle?) {
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     @available(*, unavailable)
-    required public init?(coder: NSCoder) {
+    public required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

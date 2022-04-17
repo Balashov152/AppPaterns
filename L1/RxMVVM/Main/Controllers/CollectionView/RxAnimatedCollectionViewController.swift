@@ -17,10 +17,10 @@ public class RxAnimatedCollectionViewController<ViewModel: RxViewModel & Animata
     public lazy var dataSource = AnimatableDataSource<ViewModel.SectionModel>.CollectionView.animated(
         animationConfiguration: animationConfiguration
     )
-    
+
     public var dataSourceBinding: Disposable?
 
-    public override func setupBindings() {
+    override public func setupBindings() {
         super.setupBindings()
         dataSourceBinding = viewModel.sections
             .asDriver(onErrorJustReturn: [])

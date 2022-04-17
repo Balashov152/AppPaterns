@@ -12,8 +12,8 @@ import UIKit
 public class RxReloadCollectionViewController<ViewModel: RxViewModel & ReloadViewModel>: RxCollectionViewController<ViewModel> {
     public lazy var dataSource = DataSource<ViewModel.SectionModel>.CollectionView.reload()
     public var dataSourceBinding: Disposable?
-    
-    public override func setupBindings() {
+
+    override public func setupBindings() {
         super.setupBindings()
         dataSourceBinding = viewModel.sections
             .asDriver(onErrorJustReturn: [])

@@ -5,9 +5,9 @@
 //  Created by Sergey Balashov on 26.03.2022.
 //
 
+import ConfigurableUI
 import Foundation
 import RxDataSources
-import ConfigurableUI
 
 public enum DataSource<SectionModel: CustomSectionModelType> {
     public enum TableView {
@@ -22,5 +22,3 @@ public enum DataSource<SectionModel: CustomSectionModelType> {
         }
     }
 }
-
-

@@ -17,7 +17,7 @@ public extension UITableView {
     func dequeueReusableCell<T>(_ type: T.Type, for indexPath: IndexPath) -> T where T: IdentifiableView {
         dequeueReusableCell(withIdentifier: type.identifier, for: indexPath) as! T
     }
-    
+
     /// Супер метод для создания ячееки, и вызова внутри нее метода `configure`
     func dequeueConfigurableCell<T: RowViewModel>(viewModel: T, for indexPath: IndexPath) -> some ConfigurableRow {
         let cell = dequeueReusableCell(viewModel.cellType, for: indexPath)

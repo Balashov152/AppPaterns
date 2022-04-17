@@ -10,13 +10,13 @@ import UIKit
 
 protocol ModulesFactorable {
     func rootModule() -> UINavigationController
-    
+
     func mvvmModule() -> NotesViewController<NotesViewModel>
 }
 
 struct ModulesFactory {
     private let serviceFactory: ServiceFactorable
-    
+
     init(serviceFactory: ServiceFactorable) {
         self.serviceFactory = serviceFactory
     }
@@ -25,10 +25,10 @@ struct ModulesFactory {
 extension ModulesFactory: ModulesFactorable {
     func rootModule() -> UINavigationController {
         let mainViewController = ViewController(modulesFactory: self)
-        
+
         return UINavigationController(rootViewController: mainViewController)
     }
-    
+
     func mvvmModule() -> NotesViewController<NotesViewModel> {
         let notesService = serviceFactory.notesServicable()
         let viewModel = NotesViewModel(notesService: notesService)

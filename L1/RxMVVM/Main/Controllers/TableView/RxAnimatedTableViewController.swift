@@ -18,10 +18,10 @@ open class RxAnimatedTableViewController<ViewModel: RxViewModel & AnimatableView
     open lazy var dataSource = AnimatableDataSource<ViewModel.SectionModel>.TableView.animated(
         animationConfiguration: animationConfiguration
     )
-    
+
     open var dataSourceBinding: Disposable?
-    
-    open override func setupBindings() {
+
+    override open func setupBindings() {
         super.setupBindings()
         dataSourceBinding = viewModel.sections
             .asDriver()

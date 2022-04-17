@@ -15,16 +15,16 @@ open class RxCollectionViewController<ViewModel: RxViewModel>: RxViewController<
         collectionView.refreshControl = control
         return control
     }()
-    
+
     open var estimatedItemSize: CGSize { CGSize(width: 100, height: 100) }
-    
+
     open lazy var collectionViewLayout: UICollectionViewFlowLayout = {
-       let layout = UICollectionViewFlowLayout()
+        let layout = UICollectionViewFlowLayout()
         layout.estimatedItemSize = estimatedItemSize
         layout.itemSize = UICollectionViewFlowLayout.automaticSize
         return layout
     }()
-    
+
     open lazy var collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: view.frame, collectionViewLayout: collectionViewLayout)
         collectionView.keyboardDismissMode = .interactive
@@ -32,7 +32,7 @@ open class RxCollectionViewController<ViewModel: RxViewModel>: RxViewController<
         return collectionView
     }()
 
-    open override func loadView() {
+    override open func loadView() {
         super.loadView()
         view = collectionView
     }

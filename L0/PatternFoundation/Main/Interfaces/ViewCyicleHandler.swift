@@ -17,8 +17,8 @@ public protocol ViewCyicleHandler {
 
 public extension ViewCyicleHandler {
     func viewDidLoad() {}
-    func viewWillAppear(_ animated: Bool) {}
-    func viewDidAppear(_ animated: Bool) {}
-    func viewWillDisappear(_ animated: Bool) {}
-    func viewDidDisappear(_ animated: Bool) {}
+    func viewWillAppear(_: Bool) {}
+    func viewDidAppear(_: Bool) {}
+    func viewWillDisappear(_: Bool) {}
+    func viewDidDisappear(_: Bool) {}
 }

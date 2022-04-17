@@ -5,9 +5,9 @@
 //  Created by Sergey Balashov on 26.03.2022.
 //
 
+import ConfigurableUI
 import Foundation
 import RxDataSources
-import ConfigurableUI
 
 public enum AnimatableDataSource<SectionModel: CustomAnimatableSectionModelType> {
     public enum TableView {
@@ -15,19 +15,18 @@ public enum AnimatableDataSource<SectionModel: CustomAnimatableSectionModelType>
             animationConfiguration: AnimationConfiguration? = nil
         ) -> RxTableViewSectionedAnimatedDataSource<SectionModel> {
             let animationConfiguration = animationConfiguration ?? AnimationConfiguration()
-            
+
             return RxTableViewSectionedAnimatedDataSource<SectionModel>(
                 animationConfiguration: animationConfiguration,
                 configureCell: ConfigureViewModable<SectionModel>().configureCell
             )
         }
     }
-    
-    public struct CollectionView {
+
+    public enum CollectionView {
         public static func animated(
             animationConfiguration: AnimationConfiguration? = nil
         ) -> RxCollectionViewSectionedAnimatedDataSource<SectionModel> {
-            
             let animationConfiguration = animationConfiguration ?? AnimationConfiguration()
             return RxCollectionViewSectionedAnimatedDataSource<SectionModel>(
                 animationConfiguration: animationConfiguration,
