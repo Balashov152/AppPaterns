@@ -24,7 +24,7 @@ struct ModulesFactory {
 
 extension ModulesFactory: ModulesFactorable {
     func rootModule() -> UINavigationController {
-        let mainViewController = ViewController(modulesFactory: self)
+        let mainViewController = RootViewController(modulesFactory: self)
 
         return UINavigationController(rootViewController: mainViewController)
     }

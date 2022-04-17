@@ -30,7 +30,7 @@ class NotesViewModel: NotesViewModelInterface {
 
     private let notesService: NotesServicable
 
-    // MARK: - Enviroment
+    // MARK: - Environment
 
     var sections: BehaviorRelay<[SectionModel]> = .init(value: [])
     private var disposeBag = DisposeBag()

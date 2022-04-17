@@ -9,7 +9,7 @@ import PatternFoundation
 import SnapKit
 import UIKit
 
-class ViewController: BaseViewController {
+class RootViewController: BaseViewController {
     private let modulesFactory: ModulesFactorable
 
     init(modulesFactory: ModulesFactorable) {

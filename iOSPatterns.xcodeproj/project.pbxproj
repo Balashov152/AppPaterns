@@ -29,7 +29,7 @@
 		EFA373ED280C812C003E6E2E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373EC280C812C003E6E2E /* BaseViewController.swift */; };
 		EFCDD7F627EF3965003E522F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD7F527EF3965003E522F /* AppDelegate.swift */; };
 		EFCDD7F827EF3965003E522F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD7F727EF3965003E522F /* SceneDelegate.swift */; };
-		EFCDD7FA27EF3965003E522F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD7F927EF3965003E522F /* ViewController.swift */; };
+		EFCDD7FA27EF3965003E522F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD7F927EF3965003E522F /* RootViewController.swift */; };
 		EFCDD7FF27EF3969003E522F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCDD7FE27EF3969003E522F /* Assets.xcassets */; };
 		EFCDD80227EF3969003E522F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCDD80027EF3969003E522F /* LaunchScreen.storyboard */; };
 		EFCDD81327EF3AFA003E522F /* RxMVVM.docc in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD81227EF3AFA003E522F /* RxMVVM.docc */; };
@@ -185,7 +185,7 @@
 		EFCDD7F227EF3965003E522F /* iOSPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCDD7F527EF3965003E522F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFCDD7F727EF3965003E522F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EFCDD7F927EF3965003E522F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFCDD7F927EF3965003E522F /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		EFCDD7FE27EF3969003E522F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFCDD80127EF3969003E522F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFCDD80327EF3969003E522F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -389,7 +389,7 @@
 		EFCDD80927EF397A003E522F /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
-				EFCDD7F927EF3965003E522F /* ViewController.swift */,
+				EFCDD7F927EF3965003E522F /* RootViewController.swift */,
 				EFCDD87E27EF670F003E522F /* MVVMExample */,
 			);
 			path = Patterns;
@@ -979,7 +979,7 @@
 			files = (
 				EFCDD88027EF673B003E522F /* NotesViewModel.swift in Sources */,
 				EFCDD88227EF6750003E522F /* NotesViewController.swift in Sources */,
-				EFCDD7FA27EF3965003E522F /* ViewController.swift in Sources */,
+				EFCDD7FA27EF3965003E522F /* RootViewController.swift in Sources */,
 				EFCDD7F627EF3965003E522F /* AppDelegate.swift in Sources */,
 				EFCDD7F827EF3965003E522F /* SceneDelegate.swift in Sources */,
 				EFCDD88527EF6789003E522F /* NoteTableViewCell.swift in Sources */,
