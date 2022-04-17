@@ -1,5 +1,5 @@
 //
-//  ViewCyicleHandler.swift
+//  ViewCycleHandler.swift
 //  RxMVVM
 //
 //  Created by Sergey Balashov on 26.03.2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol ViewCyicleHandler {
+public protocol ViewCycleHandler: AnyObject {
     func viewDidLoad()
     func viewWillAppear(_ animated: Bool)
     func viewDidAppear(_ animated: Bool)
@@ -15,7 +15,7 @@ public protocol ViewCyicleHandler {
     func viewDidDisappear(_ animated: Bool)
 }
 
-public extension ViewCyicleHandler {
+public extension ViewCycleHandler {
     func viewDidLoad() {}
     func viewWillAppear(_: Bool) {}
     func viewDidAppear(_: Bool) {}

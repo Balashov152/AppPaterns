@@ -9,7 +9,7 @@ import PatternFoundation
 import RxSwift
 import UIKit
 
-public typealias RxViewModel = ViewCyicleHandler
+public typealias RxViewModel = ViewCycleHandler
 
 open class RxViewController<ViewModel: RxViewModel>: UIViewController {
     public let viewModel: ViewModel

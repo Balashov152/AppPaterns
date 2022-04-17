@@ -16,7 +16,7 @@ import RxSwift
 typealias NotesViewModelInterface = (
     NotesViewModelType &
         AnimatableViewModel &
-        ViewCyicleHandler
+        ViewCycleHandler
 )
 
 protocol NotesViewModelType {
@@ -61,7 +61,7 @@ extension NotesViewModel {
     }
 }
 
-// MARK: - ViewCyicleHandler
+// MARK: - ViewCycleHandler
 
 extension NotesViewModel {
     func viewDidLoad() {

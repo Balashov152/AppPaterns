@@ -27,6 +27,17 @@
 		EFA373E7280C80BE003E6E2E /* PatternModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA373D9280C8042003E6E2E /* PatternModels.framework */; platformFilter = ios; };
 		EFA373E8280C80BE003E6E2E /* PatternModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFA373D9280C8042003E6E2E /* PatternModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFA373ED280C812C003E6E2E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373EC280C812C003E6E2E /* BaseViewController.swift */; };
+		EFA37401280C853B003E6E2E /* ChatsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F2280C853B003E6E2E /* ChatsListPresenter.swift */; };
+		EFA37402280C853B003E6E2E /* ChatsListPresenterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F3280C853B003E6E2E /* ChatsListPresenterState.swift */; };
+		EFA37403280C853B003E6E2E /* ChatsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F5280C853B003E6E2E /* ChatsListView.swift */; };
+		EFA37404280C853B003E6E2E /* ChatsListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F6280C853B003E6E2E /* ChatsListViewOutput.swift */; };
+		EFA37405280C853B003E6E2E /* ChatsListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F7280C853B003E6E2E /* ChatsListViewState.swift */; };
+		EFA37406280C853B003E6E2E /* ChatsListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F9280C853B003E6E2E /* ChatsListConfigurator.swift */; };
+		EFA37407280C853B003E6E2E /* ChatsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373FB280C853B003E6E2E /* ChatsListInteractor.swift */; };
+		EFA37408280C853B003E6E2E /* ChatsListInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373FC280C853B003E6E2E /* ChatsListInteracting.swift */; };
+		EFA37409280C853B003E6E2E /* ChatsListInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373FE280C853B003E6E2E /* ChatsListInput.swift */; };
+		EFA3740A280C853B003E6E2E /* ChatsListOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373FF280C853B003E6E2E /* ChatsListOutput.swift */; };
+		EFA3740D280C8667003E6E2E /* PatternHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA3740C280C8667003E6E2E /* PatternHostingController.swift */; };
 		EFCDD7F627EF3965003E522F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD7F527EF3965003E522F /* AppDelegate.swift */; };
 		EFCDD7F827EF3965003E522F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD7F727EF3965003E522F /* SceneDelegate.swift */; };
 		EFCDD7FA27EF3965003E522F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD7F927EF3965003E522F /* RootViewController.swift */; };
@@ -182,6 +193,17 @@
 		EFA373DB280C8042003E6E2E /* PatternModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatternModels.h; sourceTree = "<group>"; };
 		EFA373DC280C8042003E6E2E /* PatternModels.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PatternModels.docc; sourceTree = "<group>"; };
 		EFA373EC280C812C003E6E2E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EFA373F2280C853B003E6E2E /* ChatsListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListPresenter.swift; sourceTree = "<group>"; };
+		EFA373F3280C853B003E6E2E /* ChatsListPresenterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListPresenterState.swift; sourceTree = "<group>"; };
+		EFA373F5280C853B003E6E2E /* ChatsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListView.swift; sourceTree = "<group>"; };
+		EFA373F6280C853B003E6E2E /* ChatsListViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListViewOutput.swift; sourceTree = "<group>"; };
+		EFA373F7280C853B003E6E2E /* ChatsListViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListViewState.swift; sourceTree = "<group>"; };
+		EFA373F9280C853B003E6E2E /* ChatsListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListConfigurator.swift; sourceTree = "<group>"; };
+		EFA373FB280C853B003E6E2E /* ChatsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListInteractor.swift; sourceTree = "<group>"; };
+		EFA373FC280C853B003E6E2E /* ChatsListInteracting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListInteracting.swift; sourceTree = "<group>"; };
+		EFA373FE280C853B003E6E2E /* ChatsListInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListInput.swift; sourceTree = "<group>"; };
+		EFA373FF280C853B003E6E2E /* ChatsListOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListOutput.swift; sourceTree = "<group>"; };
+		EFA3740C280C8667003E6E2E /* PatternHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternHostingController.swift; sourceTree = "<group>"; };
 		EFCDD7F227EF3965003E522F /* iOSPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCDD7F527EF3965003E522F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFCDD7F727EF3965003E522F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -351,8 +373,66 @@
 		EFA373EE280C8401003E6E2E /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				EFA373F0280C853B003E6E2E /* ChatsList */,
 			);
 			path = VIPER;
+			sourceTree = "<group>";
+		};
+		EFA373F0280C853B003E6E2E /* ChatsList */ = {
+			isa = PBXGroup;
+			children = (
+				EFA373F1280C853B003E6E2E /* Presenter */,
+				EFA373F4280C853B003E6E2E /* View */,
+				EFA373F8280C853B003E6E2E /* Configurator */,
+				EFA373FA280C853B003E6E2E /* Interactor */,
+				EFA373FD280C853B003E6E2E /* Router */,
+			);
+			path = ChatsList;
+			sourceTree = "<group>";
+		};
+		EFA373F1280C853B003E6E2E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EFA373F2280C853B003E6E2E /* ChatsListPresenter.swift */,
+				EFA373F3280C853B003E6E2E /* ChatsListPresenterState.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EFA373F4280C853B003E6E2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFA373F5280C853B003E6E2E /* ChatsListView.swift */,
+				EFA373F6280C853B003E6E2E /* ChatsListViewOutput.swift */,
+				EFA373F7280C853B003E6E2E /* ChatsListViewState.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFA373F8280C853B003E6E2E /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				EFA373F9280C853B003E6E2E /* ChatsListConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		EFA373FA280C853B003E6E2E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EFA373FB280C853B003E6E2E /* ChatsListInteractor.swift */,
+				EFA373FC280C853B003E6E2E /* ChatsListInteracting.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EFA373FD280C853B003E6E2E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EFA373FE280C853B003E6E2E /* ChatsListInput.swift */,
+				EFA373FF280C853B003E6E2E /* ChatsListOutput.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		EFCDD7E927EF3965003E522F = {
@@ -585,6 +665,7 @@
 			children = (
 				EFCDD8AD27EF7659003E522F /* BaseTableViewCell.swift */,
 				EFA373EC280C812C003E6E2E /* BaseViewController.swift */,
+				EFA3740C280C8667003E6E2E /* PatternHostingController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -985,13 +1066,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA37408280C853B003E6E2E /* ChatsListInteracting.swift in Sources */,
 				EFCDD88027EF673B003E522F /* NotesViewModel.swift in Sources */,
 				EFCDD88227EF6750003E522F /* NotesViewController.swift in Sources */,
+				EFA37405280C853B003E6E2E /* ChatsListViewState.swift in Sources */,
+				EFA37403280C853B003E6E2E /* ChatsListView.swift in Sources */,
+				EFA37407280C853B003E6E2E /* ChatsListInteractor.swift in Sources */,
+				EFA37401280C853B003E6E2E /* ChatsListPresenter.swift in Sources */,
 				EFCDD7FA27EF3965003E522F /* RootViewController.swift in Sources */,
 				EFCDD7F627EF3965003E522F /* AppDelegate.swift in Sources */,
+				EFA37404280C853B003E6E2E /* ChatsListViewOutput.swift in Sources */,
 				EFCDD7F827EF3965003E522F /* SceneDelegate.swift in Sources */,
 				EFCDD88527EF6789003E522F /* NoteTableViewCell.swift in Sources */,
+				EFA37402280C853B003E6E2E /* ChatsListPresenterState.swift in Sources */,
 				EFA373B9280C7DF1003E6E2E /* ModulesFactory.swift in Sources */,
+				EFA37409280C853B003E6E2E /* ChatsListInput.swift in Sources */,
+				EFA37406280C853B003E6E2E /* ChatsListConfigurator.swift in Sources */,
+				EFA3740A280C853B003E6E2E /* ChatsListOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1039,6 +1130,7 @@
 				EFCDD89B27EF6D57003E522F /* ViewCyicleHandler.swift in Sources */,
 				EFA373ED280C812C003E6E2E /* BaseViewController.swift in Sources */,
 				EFCDD8AE27EF7659003E522F /* BaseTableViewCell.swift in Sources */,
+				EFA3740D280C8667003E6E2E /* PatternHostingController.swift in Sources */,
 				EFCDD89127EF6D38003E522F /* PatternFoundation.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
