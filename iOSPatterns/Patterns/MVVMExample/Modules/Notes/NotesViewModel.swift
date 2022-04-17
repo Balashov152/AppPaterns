@@ -10,6 +10,7 @@ import RxMVVM
 import RxCocoa
 import RxSwift
 import PatternFoundation
+import PatternServices
 import ConfigurableUI
 
 typealias NotesViewModelInterface = (
@@ -27,19 +28,19 @@ class NotesViewModel: NotesViewModelInterface {
     
     // MARK: - Dependencies
     
-    private let storage: StorageServicing
+    private let notesService: NotesServicable
     
     // MARK: - Enviroment
 
     var sections: BehaviorRelay<[SectionModel]> = .init(value: [])
     private var disposeBag = DisposeBag()
     
-    init(storage: StorageServicing) {
-        self.storage = storage
+    init(notesService: NotesServicable) {
+        self.notesService = notesService
     }
     
     func updateData() {
-        storage.getNotes()
+        notesService.getNotes()
             .observe(on: ConcurrentDispatchQueueScheduler(queue: .global()))
             .map { notes -> [SectionModel] in
                 [

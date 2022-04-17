@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import PatternServices
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
     var window: UIWindow?
-
+    
+    lazy var modulesFactory: ModulesFactorable = ModulesFactory(serviceFactory: ServiceFactory())
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -19,8 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         let window = UIWindow(windowScene: windowScene)
-        let navigationController = UINavigationController(rootViewController: ViewController())
-        window.rootViewController = navigationController
+        window.rootViewController = modulesFactory.rootModule()
         window.makeKeyAndVisible()
 
         self.window = window

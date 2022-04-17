@@ -6,15 +6,15 @@
 //
 
 import RxSwift
-import Foundation
+import PatternModels
 
-protocol StorageServicing {
+public protocol NotesServicable {
     func getNotes() -> Observable<[Note]>
 }
 
-struct StorageService {}
+struct NotesService {}
 
-extension StorageService: StorageServicing {
+extension NotesService: NotesServicable {
     func getNotes() -> Observable<[Note]> {
         var notes: [Note] = []
         

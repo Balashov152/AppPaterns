@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFA373AE280C7DAD003E6E2E /* PatternUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = EFA373AD280C7DAD003E6E2E /* PatternUI.docc */; };
+		EFA373AF280C7DAD003E6E2E /* PatternUI.h in Headers */ = {isa = PBXBuildFile; fileRef = EFA373AC280C7DAD003E6E2E /* PatternUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFA373B2280C7DAD003E6E2E /* PatternUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA373AA280C7DAD003E6E2E /* PatternUI.framework */; };
+		EFA373B3280C7DAD003E6E2E /* PatternUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFA373AA280C7DAD003E6E2E /* PatternUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFA373B9280C7DF1003E6E2E /* ModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373B8280C7DF1003E6E2E /* ModulesFactory.swift */; };
+		EFA373C3280C7E88003E6E2E /* PatternServices.docc in Sources */ = {isa = PBXBuildFile; fileRef = EFA373C2280C7E88003E6E2E /* PatternServices.docc */; };
+		EFA373C4280C7E88003E6E2E /* PatternServices.h in Headers */ = {isa = PBXBuildFile; fileRef = EFA373C1280C7E88003E6E2E /* PatternServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFA373C7280C7E88003E6E2E /* PatternServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA373BF280C7E88003E6E2E /* PatternServices.framework */; };
+		EFA373C8280C7E88003E6E2E /* PatternServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFA373BF280C7E88003E6E2E /* PatternServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFA373D0280C7F0A003E6E2E /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD8A327EF7037003E522F /* StorageService.swift */; };
+		EFA373D1280C7F67003E6E2E /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373CC280C7E9B003E6E2E /* ServiceFactory.swift */; };
+		EFA373D3280C8016003E6E2E /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EFA373D2280C8016003E6E2E /* RxSwift */; };
+		EFA373DD280C8042003E6E2E /* PatternModels.docc in Sources */ = {isa = PBXBuildFile; fileRef = EFA373DC280C8042003E6E2E /* PatternModels.docc */; };
+		EFA373DE280C8042003E6E2E /* PatternModels.h in Headers */ = {isa = PBXBuildFile; fileRef = EFA373DB280C8042003E6E2E /* PatternModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFA373E1280C8042003E6E2E /* PatternModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA373D9280C8042003E6E2E /* PatternModels.framework */; };
+		EFA373E2280C8042003E6E2E /* PatternModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFA373D9280C8042003E6E2E /* PatternModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFA373E6280C804F003E6E2E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD8A627EF70F1003E522F /* Note.swift */; };
+		EFA373E7280C80BE003E6E2E /* PatternModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA373D9280C8042003E6E2E /* PatternModels.framework */; platformFilter = ios; };
+		EFA373E8280C80BE003E6E2E /* PatternModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFA373D9280C8042003E6E2E /* PatternModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFA373ED280C812C003E6E2E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373EC280C812C003E6E2E /* BaseViewController.swift */; };
 		EFCDD7F627EF3965003E522F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD7F527EF3965003E522F /* AppDelegate.swift */; };
 		EFCDD7F827EF3965003E522F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD7F727EF3965003E522F /* SceneDelegate.swift */; };
 		EFCDD7FA27EF3965003E522F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD7F927EF3965003E522F /* ViewController.swift */; };
@@ -49,8 +69,6 @@
 		EFCDD89B27EF6D57003E522F /* ViewCyicleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD88627EF6C93003E522F /* ViewCyicleHandler.swift */; };
 		EFCDD89C27EF6D9D003E522F /* PatternFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCDD88D27EF6D38003E522F /* PatternFoundation.framework */; platformFilter = ios; };
 		EFCDD89D27EF6D9D003E522F /* PatternFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFCDD88D27EF6D38003E522F /* PatternFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFCDD8A427EF7037003E522F /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD8A327EF7037003E522F /* StorageService.swift */; };
-		EFCDD8A727EF70F1003E522F /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD8A627EF70F1003E522F /* Note.swift */; };
 		EFCDD8AA27EF73CB003E522F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EFCDD8A927EF73CB003E522F /* SnapKit */; };
 		EFCDD8AE27EF7659003E522F /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD8AD27EF7659003E522F /* BaseTableViewCell.swift */; };
 		EFCDD8B627F08152003E522F /* CustomSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD8B527F08152003E522F /* CustomSectionModel.swift */; };
@@ -60,6 +78,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		EFA373B0280C7DAD003E6E2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFCDD7EA27EF3965003E522F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFA373A9280C7DAD003E6E2E;
+			remoteInfo = PatternUI;
+		};
+		EFA373C5280C7E88003E6E2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFCDD7EA27EF3965003E522F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFA373BE280C7E88003E6E2E;
+			remoteInfo = PatternServices;
+		};
+		EFA373DF280C8042003E6E2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFCDD7EA27EF3965003E522F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFA373D8280C8042003E6E2E;
+			remoteInfo = PatternModels;
+		};
+		EFA373E9280C80BE003E6E2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFCDD7EA27EF3965003E522F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFA373D8280C8042003E6E2E;
+			remoteInfo = PatternModels;
+		};
 		EFCDD81527EF3AFA003E522F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EFCDD7EA27EF3965003E522F /* Project object */;
@@ -84,13 +130,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		EFA373EB280C80BE003E6E2E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EFA373E8280C80BE003E6E2E /* PatternModels.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFCDD81927EF3AFA003E522F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				EFA373C8280C7E88003E6E2E /* PatternServices.framework in Embed Frameworks */,
+				EFA373E2280C8042003E6E2E /* PatternModels.framework in Embed Frameworks */,
 				EFCDD81827EF3AFA003E522F /* RxMVVM.framework in Embed Frameworks */,
+				EFA373B3280C7DAD003E6E2E /* PatternUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +170,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EFA373AA280C7DAD003E6E2E /* PatternUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PatternUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFA373AC280C7DAD003E6E2E /* PatternUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatternUI.h; sourceTree = "<group>"; };
+		EFA373AD280C7DAD003E6E2E /* PatternUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PatternUI.docc; sourceTree = "<group>"; };
+		EFA373B8280C7DF1003E6E2E /* ModulesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactory.swift; sourceTree = "<group>"; };
+		EFA373BF280C7E88003E6E2E /* PatternServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PatternServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFA373C1280C7E88003E6E2E /* PatternServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatternServices.h; sourceTree = "<group>"; };
+		EFA373C2280C7E88003E6E2E /* PatternServices.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PatternServices.docc; sourceTree = "<group>"; };
+		EFA373CC280C7E9B003E6E2E /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		EFA373D9280C8042003E6E2E /* PatternModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PatternModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFA373DB280C8042003E6E2E /* PatternModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatternModels.h; sourceTree = "<group>"; };
+		EFA373DC280C8042003E6E2E /* PatternModels.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PatternModels.docc; sourceTree = "<group>"; };
+		EFA373EC280C812C003E6E2E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EFCDD7F227EF3965003E522F /* iOSPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCDD7F527EF3965003E522F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFCDD7F727EF3965003E522F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,12 +229,38 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EFA373A7280C7DAD003E6E2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA373BC280C7E88003E6E2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA373D3280C8016003E6E2E /* RxSwift in Frameworks */,
+				EFA373E7280C80BE003E6E2E /* PatternModels.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA373D6280C8042003E6E2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFCDD7EF27EF3965003E522F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EFCDD8AA27EF73CB003E522F /* SnapKit in Frameworks */,
+				EFA373E1280C8042003E6E2E /* PatternModels.framework in Frameworks */,
 				EFCDD81727EF3AFA003E522F /* RxMVVM.framework in Frameworks */,
+				EFA373B2280C7DAD003E6E2E /* PatternUI.framework in Frameworks */,
+				EFA373C7280C7E88003E6E2E /* PatternServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +294,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EFA373AB280C7DAD003E6E2E /* PatternUI */ = {
+			isa = PBXGroup;
+			children = (
+				EFA373AC280C7DAD003E6E2E /* PatternUI.h */,
+				EFA373AD280C7DAD003E6E2E /* PatternUI.docc */,
+			);
+			path = PatternUI;
+			sourceTree = "<group>";
+		};
+		EFA373B7280C7DDE003E6E2E /* ModulesFactory */ = {
+			isa = PBXGroup;
+			children = (
+				EFA373B8280C7DF1003E6E2E /* ModulesFactory.swift */,
+			);
+			path = ModulesFactory;
+			sourceTree = "<group>";
+		};
+		EFA373C0280C7E88003E6E2E /* PatternServices */ = {
+			isa = PBXGroup;
+			children = (
+				EFA373CF280C7EA9003E6E2E /* Services */,
+				EFA373CE280C7EA2003E6E2E /* Factory */,
+				EFA373C1280C7E88003E6E2E /* PatternServices.h */,
+				EFA373C2280C7E88003E6E2E /* PatternServices.docc */,
+			);
+			path = PatternServices;
+			sourceTree = "<group>";
+		};
+		EFA373CE280C7EA2003E6E2E /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				EFA373CC280C7E9B003E6E2E /* ServiceFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		EFA373CF280C7EA9003E6E2E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDD8A327EF7037003E522F /* StorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EFA373DA280C8042003E6E2E /* PatternModels */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDD8A527EF70E7003E522F /* Types */,
+				EFA373DB280C8042003E6E2E /* PatternModels.h */,
+				EFA373DC280C8042003E6E2E /* PatternModels.docc */,
+			);
+			path = PatternModels;
+			sourceTree = "<group>";
+		};
 		EFCDD7E927EF3965003E522F = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +366,9 @@
 				EFCDD80F27EF3AFA003E522F /* RxMVVM.framework */,
 				EFCDD83C27EF3EC6003E522F /* ConfigurableUI.framework */,
 				EFCDD88D27EF6D38003E522F /* PatternFoundation.framework */,
+				EFA373AA280C7DAD003E6E2E /* PatternUI.framework */,
+				EFA373BF280C7E88003E6E2E /* PatternServices.framework */,
+				EFA373D9280C8042003E6E2E /* PatternModels.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,6 +376,7 @@
 		EFCDD7F427EF3965003E522F /* iOSPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				EFA373B7280C7DDE003E6E2E /* ModulesFactory */,
 				EFCDD8B127EF774E003E522F /* Application */,
 				EFCDD80927EF397A003E522F /* Patterns */,
 				EFCDD7FE27EF3969003E522F /* Assets.xcassets */,
@@ -351,8 +507,6 @@
 			isa = PBXGroup;
 			children = (
 				EFCDD8A127EF700B003E522F /* Modules */,
-				EFCDD8A227EF7017003E522F /* Services */,
-				EFCDD8A527EF70E7003E522F /* Types */,
 			);
 			path = MVVMExample;
 			sourceTree = "<group>";
@@ -402,14 +556,6 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		EFCDD8A227EF7017003E522F /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				EFCDD8A327EF7037003E522F /* StorageService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		EFCDD8A527EF70E7003E522F /* Types */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,6 +576,7 @@
 			isa = PBXGroup;
 			children = (
 				EFCDD8AD27EF7659003E522F /* BaseTableViewCell.swift */,
+				EFA373EC280C812C003E6E2E /* BaseViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -437,6 +584,7 @@
 		EFCDD8AF27EF771E003E522F /* L1 */ = {
 			isa = PBXGroup;
 			children = (
+				EFA373AB280C7DAD003E6E2E /* PatternUI */,
 				EFCDD81027EF3AFA003E522F /* RxMVVM */,
 			);
 			path = L1;
@@ -445,6 +593,8 @@
 		EFCDD8B027EF7739003E522F /* L0 */ = {
 			isa = PBXGroup;
 			children = (
+				EFA373DA280C8042003E6E2E /* PatternModels */,
+				EFA373C0280C7E88003E6E2E /* PatternServices */,
 				EFCDD83D27EF3EC6003E522F /* ConfigurableUI */,
 				EFCDD88E27EF6D38003E522F /* PatternFoundation */,
 			);
@@ -481,6 +631,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		EFA373A5280C7DAD003E6E2E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA373AF280C7DAD003E6E2E /* PatternUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA373BA280C7E88003E6E2E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA373C4280C7E88003E6E2E /* PatternServices.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA373D4280C8042003E6E2E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA373DE280C8042003E6E2E /* PatternModels.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFCDD80A27EF3AFA003E522F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -508,6 +682,65 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		EFA373A9280C7DAD003E6E2E /* PatternUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFA373B6280C7DAE003E6E2E /* Build configuration list for PBXNativeTarget "PatternUI" */;
+			buildPhases = (
+				EFA373A5280C7DAD003E6E2E /* Headers */,
+				EFA373A6280C7DAD003E6E2E /* Sources */,
+				EFA373A7280C7DAD003E6E2E /* Frameworks */,
+				EFA373A8280C7DAD003E6E2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PatternUI;
+			productName = PatternUI;
+			productReference = EFA373AA280C7DAD003E6E2E /* PatternUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EFA373BE280C7E88003E6E2E /* PatternServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFA373C9280C7E88003E6E2E /* Build configuration list for PBXNativeTarget "PatternServices" */;
+			buildPhases = (
+				EFA373BA280C7E88003E6E2E /* Headers */,
+				EFA373BB280C7E88003E6E2E /* Sources */,
+				EFA373BC280C7E88003E6E2E /* Frameworks */,
+				EFA373BD280C7E88003E6E2E /* Resources */,
+				EFA373EB280C80BE003E6E2E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFA373EA280C80BE003E6E2E /* PBXTargetDependency */,
+			);
+			name = PatternServices;
+			packageProductDependencies = (
+				EFA373D2280C8016003E6E2E /* RxSwift */,
+			);
+			productName = PatternServices;
+			productReference = EFA373BF280C7E88003E6E2E /* PatternServices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EFA373D8280C8042003E6E2E /* PatternModels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFA373E3280C8042003E6E2E /* Build configuration list for PBXNativeTarget "PatternModels" */;
+			buildPhases = (
+				EFA373D4280C8042003E6E2E /* Headers */,
+				EFA373D5280C8042003E6E2E /* Sources */,
+				EFA373D6280C8042003E6E2E /* Frameworks */,
+				EFA373D7280C8042003E6E2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PatternModels;
+			productName = PatternModels;
+			productReference = EFA373D9280C8042003E6E2E /* PatternModels.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		EFCDD7F127EF3965003E522F /* iOSPatterns */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFCDD80627EF3969003E522F /* Build configuration list for PBXNativeTarget "iOSPatterns" */;
@@ -521,6 +754,9 @@
 			);
 			dependencies = (
 				EFCDD81627EF3AFA003E522F /* PBXTargetDependency */,
+				EFA373B1280C7DAD003E6E2E /* PBXTargetDependency */,
+				EFA373C6280C7E88003E6E2E /* PBXTargetDependency */,
+				EFA373E0280C8042003E6E2E /* PBXTargetDependency */,
 			);
 			name = iOSPatterns;
 			packageProductDependencies = (
@@ -603,6 +839,15 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					EFA373A9280C7DAD003E6E2E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					EFA373BE280C7E88003E6E2E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					EFA373D8280C8042003E6E2E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					EFCDD7F127EF3965003E522F = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -639,11 +884,35 @@
 				EFCDD80E27EF3AFA003E522F /* RxMVVM */,
 				EFCDD83B27EF3EC6003E522F /* ConfigurableUI */,
 				EFCDD88C27EF6D38003E522F /* PatternFoundation */,
+				EFA373A9280C7DAD003E6E2E /* PatternUI */,
+				EFA373BE280C7E88003E6E2E /* PatternServices */,
+				EFA373D8280C8042003E6E2E /* PatternModels */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EFA373A8280C7DAD003E6E2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA373BD280C7E88003E6E2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA373D7280C8042003E6E2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFCDD7F027EF3965003E522F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -677,6 +946,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EFA373A6280C7DAD003E6E2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA373AE280C7DAD003E6E2E /* PatternUI.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA373BB280C7E88003E6E2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA373C3280C7E88003E6E2E /* PatternServices.docc in Sources */,
+				EFA373D0280C7F0A003E6E2E /* StorageService.swift in Sources */,
+				EFA373D1280C7F67003E6E2E /* ServiceFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA373D5280C8042003E6E2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA373DD280C8042003E6E2E /* PatternModels.docc in Sources */,
+				EFA373E6280C804F003E6E2E /* Note.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFCDD7EE27EF3965003E522F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -684,11 +980,10 @@
 				EFCDD88027EF673B003E522F /* NotesViewModel.swift in Sources */,
 				EFCDD88227EF6750003E522F /* NotesViewController.swift in Sources */,
 				EFCDD7FA27EF3965003E522F /* ViewController.swift in Sources */,
-				EFCDD8A727EF70F1003E522F /* Note.swift in Sources */,
 				EFCDD7F627EF3965003E522F /* AppDelegate.swift in Sources */,
 				EFCDD7F827EF3965003E522F /* SceneDelegate.swift in Sources */,
 				EFCDD88527EF6789003E522F /* NoteTableViewCell.swift in Sources */,
-				EFCDD8A427EF7037003E522F /* StorageService.swift in Sources */,
+				EFA373B9280C7DF1003E6E2E /* ModulesFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,6 +1029,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFCDD89B27EF6D57003E522F /* ViewCyicleHandler.swift in Sources */,
+				EFA373ED280C812C003E6E2E /* BaseViewController.swift in Sources */,
 				EFCDD8AE27EF7659003E522F /* BaseTableViewCell.swift in Sources */,
 				EFCDD89127EF6D38003E522F /* PatternFoundation.docc in Sources */,
 			);
@@ -742,6 +1038,27 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		EFA373B1280C7DAD003E6E2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFA373A9280C7DAD003E6E2E /* PatternUI */;
+			targetProxy = EFA373B0280C7DAD003E6E2E /* PBXContainerItemProxy */;
+		};
+		EFA373C6280C7E88003E6E2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFA373BE280C7E88003E6E2E /* PatternServices */;
+			targetProxy = EFA373C5280C7E88003E6E2E /* PBXContainerItemProxy */;
+		};
+		EFA373E0280C8042003E6E2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFA373D8280C8042003E6E2E /* PatternModels */;
+			targetProxy = EFA373DF280C8042003E6E2E /* PBXContainerItemProxy */;
+		};
+		EFA373EA280C80BE003E6E2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = EFA373D8280C8042003E6E2E /* PatternModels */;
+			targetProxy = EFA373E9280C80BE003E6E2E /* PBXContainerItemProxy */;
+		};
 		EFCDD81627EF3AFA003E522F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EFCDD80E27EF3AFA003E522F /* RxMVVM */;
@@ -773,6 +1090,198 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EFA373B4280C7DAE003E6E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6XNMN66Z79;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba1ashov.PatternUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EFA373B5280C7DAE003E6E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6XNMN66Z79;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba1ashov.PatternUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EFA373CA280C7E88003E6E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6XNMN66Z79;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba1ashov.PatternServices;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EFA373CB280C7E88003E6E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6XNMN66Z79;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba1ashov.PatternServices;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EFA373E4280C8042003E6E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6XNMN66Z79;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba1ashov.PatternModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EFA373E5280C8042003E6E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6XNMN66Z79;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ba1ashov.PatternModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		EFCDD80427EF3969003E522F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -904,6 +1413,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -932,6 +1442,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1140,6 +1651,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EFA373B6280C7DAE003E6E2E /* Build configuration list for PBXNativeTarget "PatternUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFA373B4280C7DAE003E6E2E /* Debug */,
+				EFA373B5280C7DAE003E6E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFA373C9280C7E88003E6E2E /* Build configuration list for PBXNativeTarget "PatternServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFA373CA280C7E88003E6E2E /* Debug */,
+				EFA373CB280C7E88003E6E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFA373E3280C8042003E6E2E /* Build configuration list for PBXNativeTarget "PatternModels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFA373E4280C8042003E6E2E /* Debug */,
+				EFA373E5280C8042003E6E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EFCDD7ED27EF3965003E522F /* Build configuration list for PBXProject "iOSPatterns" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1215,6 +1753,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EFA373D2280C8016003E6E2E /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFCDD86427EF59B7003E522F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		EFCDD82D27EF3CDC003E522F /* RxDataSources */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EFCDD82A27EF3CDC003E522F /* XCRemoteSwiftPackageReference "RxDataSources" */;

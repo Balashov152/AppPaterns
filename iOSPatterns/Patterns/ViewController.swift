@@ -7,16 +7,23 @@
 
 import UIKit
 import SnapKit
+import PatternFoundation
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
+    private let modulesFactory: ModulesFactorable
+    
+    init(modulesFactory: ModulesFactorable) {
+        self.modulesFactory = modulesFactory
+        
+        super.init()
+    }
+    
     lazy var mvvmButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Rx+MVVM Example", for: .normal)
-        button.setTitleColor(.blue, for: .normal)
+        let button = patternButton(title: "Rx+MVVM Example")
         button.addTarget(self, action: #selector(openMVVMExample), for: .touchUpInside)
         return button
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -26,14 +33,18 @@ class ViewController: UIViewController {
             make.center.equalToSuperview()
         }
     }
-
+    
     @objc func openMVVMExample() {
-        let storage = StorageService()
-        let viewModel = NotesViewModel(storage: storage)
-        let vc = NotesViewController<NotesViewModel>(viewModel: viewModel)
-        
-        navigationController?.pushViewController(vc, animated: true)
+        let module = modulesFactory.mvvmModule()
+        navigationController?.pushViewController(module, animated: true)
     }
-
+    
+    private func patternButton(title: String) -> UIButton {
+        let button = UIButton(type: .system)
+        button.setTitle(title, for: .normal)
+        button.setTitleColor(.blue, for: .normal)
+        
+        return button
+    }
 }
 
