@@ -8,6 +8,7 @@
 import PatternFoundation
 import SnapKit
 import UIKit
+import SwiftUI
 
 class RootViewController: BaseViewController {
     private let modulesFactory: ModulesFactorable
@@ -23,13 +24,22 @@ class RootViewController: BaseViewController {
         button.addTarget(self, action: #selector(openMVVMExample), for: .touchUpInside)
         return button
     }()
+    
+    lazy var mvpsuiButton: UIButton = {
+        let button = patternButton(title: "Coordinator+MVP+SUI Example")
+        button.addTarget(self, action: #selector(openSUICoordinatorFlow), for: .touchUpInside)
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        view.addSubview(mvvmButton)
-
-        mvvmButton.snp.makeConstraints { make in
+        
+        let stack = UIStackView(arrangedSubviews: [mvvmButton, mvpsuiButton])
+        stack.axis = .vertical
+        
+        view.addSubview(stack)
+        stack.snp.makeConstraints { make in
             make.center.equalToSuperview()
         }
     }
@@ -37,6 +47,17 @@ class RootViewController: BaseViewController {
     @objc func openMVVMExample() {
         let module = modulesFactory.mvvmModule()
         navigationController?.pushViewController(module, animated: true)
+    }
+    
+    
+    @objc func openSUICoordinatorFlow() {
+        let object = SUICoordinatorObject(modulesFactory: modulesFactory)
+        let view = SUICoordinatorView(object: object)
+        
+        object.start()
+        
+        let hosting = UIHostingController(rootView: view)
+        navigationController?.pushViewController(hosting, animated: true)
     }
 
     private func patternButton(title: String) -> UIButton {

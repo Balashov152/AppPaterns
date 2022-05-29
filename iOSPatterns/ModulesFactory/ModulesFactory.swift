@@ -12,6 +12,7 @@ protocol ModulesFactorable {
     func rootModule() -> UINavigationController
 
     func mvvmModule() -> NotesViewController<NotesViewModel>
+    func mvpsuiModule(output: MVPSUIOutput) -> (view: MVPSUIView, input: MVPSUIInput)
 }
 
 struct ModulesFactory {
@@ -33,5 +34,13 @@ extension ModulesFactory: ModulesFactorable {
         let notesService = serviceFactory.notesServicable()
         let viewModel = NotesViewModel(notesService: notesService)
         return NotesViewController<NotesViewModel>(viewModel: viewModel)
+    }
+    
+    func mvpsuiModule(output: MVPSUIOutput) -> (view: MVPSUIView, input: MVPSUIInput) {
+        let viewState = MVPSUIViewState()
+        let presenter = MVPSUIPresenter(output: output, viewState: viewState)
+        let view = MVPSUIView(output: presenter, state: viewState)
+        
+        return (view: view, input: presenter)
     }
 }

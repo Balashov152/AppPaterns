@@ -9,13 +9,13 @@ import Foundation
 import UIKit
 
 open class BaseViewController: UIViewController {
-    public convenience init() {
-        self.init(nibName: nil, bundle: nil)
-    }
-
-    override public init(nibName _: String?, bundle _: Bundle?) {
+    public init() {
         super.init(nibName: nil, bundle: nil)
     }
+
+//    override public init(nibName _: String? = nil, bundle _: Bundle? = nil) {
+//        super.init(nibName: nil, bundle: nil)
+//    }
 
     @available(*, unavailable)
     public required init?(coder _: NSCoder) {
