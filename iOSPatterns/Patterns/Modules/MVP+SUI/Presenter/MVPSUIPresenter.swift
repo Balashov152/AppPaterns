@@ -33,7 +33,7 @@ class MVPSUIPresenter {
 
 extension MVPSUIPresenter: MVPSUIInput {
     func updateViewIndex(int: Int) {
-        // ..
+        viewState.viewIndex = int
     }
 }
 
