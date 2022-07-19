@@ -14,7 +14,7 @@ class MVPSUIPresenter {
     // Property for manage view
     private let viewState: MVPSUIViewState
     
-    // Router output
+    // Router output, usually coordinator
     private weak var output: MVPSUIOutput?
     
     // Two most important propery output and viewState
@@ -51,7 +51,7 @@ extension MVPSUIPresenter: MVPSUIViewOutput {
 }
 
 // MARK: - Private
-// Any private realisations
+// Any private logic
 
 private extension MVPSUIPresenter {
     func openNextScreen() {

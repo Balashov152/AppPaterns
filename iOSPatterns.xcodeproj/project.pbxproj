@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF50A5A62886E2EC0081C5BB /* SUICoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50A5A52886E2EC0081C5BB /* SUICoordinatorView.swift */; };
+		EF50A5A82886E3E10081C5BB /* View+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50A5A72886E3E10081C5BB /* View+Navigation.swift */; };
+		EF50A5AC2886E5D10081C5BB /* BaseCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50A5AB2886E5D10081C5BB /* BaseCoordinatorView.swift */; };
 		EF8603E32840E7CF0061A3F9 /* MVPSUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E22840E7CF0061A3F9 /* MVPSUIView.swift */; };
 		EF8603E52840E88B0061A3F9 /* MVPSUIViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E42840E88A0061A3F9 /* MVPSUIViewState.swift */; };
 		EF8603E72840E8970061A3F9 /* MVPSUIViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E62840E8970061A3F9 /* MVPSUIViewOutput.swift */; };
 		EF8603E92840E93F0061A3F9 /* MVPSUIOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E82840E93F0061A3F9 /* MVPSUIOutput.swift */; };
 		EF8603EB2840E96D0061A3F9 /* MVPSUIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603EA2840E96D0061A3F9 /* MVPSUIInput.swift */; };
 		EF8603ED2840E98F0061A3F9 /* MVPSUIPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603EC2840E98F0061A3F9 /* MVPSUIPresenter.swift */; };
-		EF8603F02840EBC40061A3F9 /* SUICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603EF2840EBC40061A3F9 /* SUICoordinator.swift */; };
+		EF8603F02840EBC40061A3F9 /* SUICoordinatorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603EF2840EBC40061A3F9 /* SUICoordinatorObject.swift */; };
 		EF8604032840F5640061A3F9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EF8604022840F5640061A3F9 /* SnapKit */; };
 		EFA373AE280C7DAD003E6E2E /* PatternUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = EFA373AD280C7DAD003E6E2E /* PatternUI.docc */; };
 		EFA373AF280C7DAD003E6E2E /* PatternUI.h in Headers */ = {isa = PBXBuildFile; fileRef = EFA373AC280C7DAD003E6E2E /* PatternUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -188,13 +191,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EF50A5A52886E2EC0081C5BB /* SUICoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUICoordinatorView.swift; sourceTree = "<group>"; };
+		EF50A5A72886E3E10081C5BB /* View+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Navigation.swift"; sourceTree = "<group>"; };
+		EF50A5AB2886E5D10081C5BB /* BaseCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinatorView.swift; sourceTree = "<group>"; };
+		EF50A5AD2886E66C0081C5BB /* VIPER.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = VIPER.md; sourceTree = "<group>"; };
 		EF8603E22840E7CF0061A3F9 /* MVPSUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIView.swift; sourceTree = "<group>"; };
 		EF8603E42840E88A0061A3F9 /* MVPSUIViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIViewState.swift; sourceTree = "<group>"; };
 		EF8603E62840E8970061A3F9 /* MVPSUIViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIViewOutput.swift; sourceTree = "<group>"; };
 		EF8603E82840E93F0061A3F9 /* MVPSUIOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIOutput.swift; sourceTree = "<group>"; };
 		EF8603EA2840E96D0061A3F9 /* MVPSUIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIInput.swift; sourceTree = "<group>"; };
 		EF8603EC2840E98F0061A3F9 /* MVPSUIPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIPresenter.swift; sourceTree = "<group>"; };
-		EF8603EF2840EBC40061A3F9 /* SUICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUICoordinator.swift; sourceTree = "<group>"; };
+		EF8603EF2840EBC40061A3F9 /* SUICoordinatorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUICoordinatorObject.swift; sourceTree = "<group>"; };
 		EFA373AA280C7DAD003E6E2E /* PatternUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PatternUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA373AC280C7DAD003E6E2E /* PatternUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatternUI.h; sourceTree = "<group>"; };
 		EFA373AD280C7DAD003E6E2E /* PatternUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PatternUI.docc; sourceTree = "<group>"; };
@@ -330,6 +337,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF50A5A92886E3EB0081C5BB /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				EF50A5A72886E3E10081C5BB /* View+Navigation.swift */,
+				EF50A5AB2886E5D10081C5BB /* BaseCoordinatorView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		EF8603DE2840E7650061A3F9 /* MVP+SUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,7 +386,8 @@
 		EF8603EE2840EBB60061A3F9 /* SUICoordinator */ = {
 			isa = PBXGroup;
 			children = (
-				EF8603EF2840EBC40061A3F9 /* SUICoordinator.swift */,
+				EF8603EF2840EBC40061A3F9 /* SUICoordinatorObject.swift */,
+				EF50A5A52886E2EC0081C5BB /* SUICoordinatorView.swift */,
 			);
 			path = SUICoordinator;
 			sourceTree = "<group>";
@@ -432,6 +449,7 @@
 		EFA373EE280C8401003E6E2E /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				EF50A5AD2886E66C0081C5BB /* VIPER.md */,
 				EFA373F0280C853B003E6E2E /* ChatsList */,
 			);
 			path = VIPER;
@@ -678,6 +696,7 @@
 		EFCDD89A27EF6D4F003E522F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EF50A5A92886E3EB0081C5BB /* SwiftUI */,
 				EFCDD8AC27EF764C003E522F /* UIKit */,
 				EFCDD8AB27EF7642003E522F /* Interfaces */,
 			);
@@ -1131,7 +1150,7 @@
 				EFCDD88027EF673B003E522F /* NotesViewModel.swift in Sources */,
 				EF8603EB2840E96D0061A3F9 /* MVPSUIInput.swift in Sources */,
 				EFCDD88227EF6750003E522F /* NotesViewController.swift in Sources */,
-				EF8603F02840EBC40061A3F9 /* SUICoordinator.swift in Sources */,
+				EF8603F02840EBC40061A3F9 /* SUICoordinatorObject.swift in Sources */,
 				EFA37405280C853B003E6E2E /* ChatsListViewState.swift in Sources */,
 				EFA37403280C853B003E6E2E /* ChatsListView.swift in Sources */,
 				EFA37407280C853B003E6E2E /* ChatsListInteractor.swift in Sources */,
@@ -1139,6 +1158,7 @@
 				EFCDD7FA27EF3965003E522F /* RootViewController.swift in Sources */,
 				EFCDD7F627EF3965003E522F /* AppDelegate.swift in Sources */,
 				EF8603E72840E8970061A3F9 /* MVPSUIViewOutput.swift in Sources */,
+				EF50A5A62886E2EC0081C5BB /* SUICoordinatorView.swift in Sources */,
 				EFA37404280C853B003E6E2E /* ChatsListViewOutput.swift in Sources */,
 				EFCDD7F827EF3965003E522F /* SceneDelegate.swift in Sources */,
 				EFCDD88527EF6789003E522F /* NoteTableViewCell.swift in Sources */,
@@ -1197,6 +1217,8 @@
 			files = (
 				EFCDD89B27EF6D57003E522F /* ViewCyicleHandler.swift in Sources */,
 				EFA373ED280C812C003E6E2E /* BaseViewController.swift in Sources */,
+				EF50A5A82886E3E10081C5BB /* View+Navigation.swift in Sources */,
+				EF50A5AC2886E5D10081C5BB /* BaseCoordinatorView.swift in Sources */,
 				EFCDD8AE27EF7659003E522F /* BaseTableViewCell.swift in Sources */,
 				EFA3740D280C8667003E6E2E /* PatternHostingController.swift in Sources */,
 				EFCDD89127EF6D38003E522F /* PatternFoundation.docc in Sources */,
