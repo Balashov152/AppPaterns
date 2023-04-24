@@ -1,5 +1,5 @@
 //
-//  MVPSUIView.swift
+//  SUIMVPView.swift
 //  iOSPatterns
 //
 //  Created by Sergey Balashov on 27.05.2022.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct MVPSUIView: View {
-    private var output: MVPSUIViewOutput
-    @ObservedObject private var state: MVPSUIViewState
+struct SUIMVPView: View {
+    private var output: SUIMVPViewOutput
+    @ObservedObject private var state: SUIMVPViewState
     
-    init(output: MVPSUIViewOutput, state: MVPSUIViewState) {
+    init(output: SUIMVPViewOutput, state: SUIMVPViewState) {
         self.output = output
         self.state = state
     }

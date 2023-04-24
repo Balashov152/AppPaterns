@@ -1,5 +1,5 @@
 //
-//  MVPSUIModuleInput.swift
+//  SUIMVPModuleInput.swift
 //  iOSPatterns
 //
 //  Created by Sergey Balashov on 27.05.2022.
@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol MVPSUIModuleInput {
+protocol SUIMVPModuleInput {
     func updateViewIndex(int: Int)
 }

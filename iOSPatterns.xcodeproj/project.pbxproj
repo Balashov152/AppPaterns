@@ -13,12 +13,12 @@
 		EF50A5A62886E2EC0081C5BB /* SUICoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50A5A52886E2EC0081C5BB /* SUICoordinatorView.swift */; };
 		EF50A5A82886E3E10081C5BB /* View+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50A5A72886E3E10081C5BB /* View+Navigation.swift */; };
 		EF50A5AC2886E5D10081C5BB /* BaseCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50A5AB2886E5D10081C5BB /* BaseCoordinatorView.swift */; };
-		EF8603E32840E7CF0061A3F9 /* MVPSUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E22840E7CF0061A3F9 /* MVPSUIView.swift */; };
-		EF8603E52840E88B0061A3F9 /* MVPSUIViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E42840E88A0061A3F9 /* MVPSUIViewState.swift */; };
-		EF8603E72840E8970061A3F9 /* MVPSUIViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E62840E8970061A3F9 /* MVPSUIViewOutput.swift */; };
-		EF8603E92840E93F0061A3F9 /* MVPSUIModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E82840E93F0061A3F9 /* MVPSUIModuleOutput.swift */; };
-		EF8603EB2840E96D0061A3F9 /* MVPSUIModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603EA2840E96D0061A3F9 /* MVPSUIModuleInput.swift */; };
-		EF8603ED2840E98F0061A3F9 /* MVPSUIPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603EC2840E98F0061A3F9 /* MVPSUIPresenter.swift */; };
+		EF8603E32840E7CF0061A3F9 /* SUIMVPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E22840E7CF0061A3F9 /* SUIMVPView.swift */; };
+		EF8603E52840E88B0061A3F9 /* SUIMVPViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E42840E88A0061A3F9 /* SUIMVPViewState.swift */; };
+		EF8603E72840E8970061A3F9 /* SUIMVPViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E62840E8970061A3F9 /* SUIMVPViewOutput.swift */; };
+		EF8603E92840E93F0061A3F9 /* SUIMVPModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E82840E93F0061A3F9 /* SUIMVPModuleOutput.swift */; };
+		EF8603EB2840E96D0061A3F9 /* SUIMVPModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603EA2840E96D0061A3F9 /* SUIMVPModuleInput.swift */; };
+		EF8603ED2840E98F0061A3F9 /* SUIMVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603EC2840E98F0061A3F9 /* SUIMVPPresenter.swift */; };
 		EF8603F02840EBC40061A3F9 /* SUICoordinatorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603EF2840EBC40061A3F9 /* SUICoordinatorObject.swift */; };
 		EF8604032840F5640061A3F9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EF8604022840F5640061A3F9 /* SnapKit */; };
 		EFA373AE280C7DAD003E6E2E /* PatternUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = EFA373AD280C7DAD003E6E2E /* PatternUI.docc */; };
@@ -41,16 +41,16 @@
 		EFA373E7280C80BE003E6E2E /* PatternModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA373D9280C8042003E6E2E /* PatternModels.framework */; platformFilter = ios; };
 		EFA373E8280C80BE003E6E2E /* PatternModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFA373D9280C8042003E6E2E /* PatternModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFA373ED280C812C003E6E2E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373EC280C812C003E6E2E /* BaseViewController.swift */; };
-		EFA37401280C853B003E6E2E /* ChatsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F2280C853B003E6E2E /* ChatsListPresenter.swift */; };
-		EFA37402280C853B003E6E2E /* ChatsListPresenterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F3280C853B003E6E2E /* ChatsListPresenterState.swift */; };
-		EFA37403280C853B003E6E2E /* ChatsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F5280C853B003E6E2E /* ChatsListView.swift */; };
-		EFA37404280C853B003E6E2E /* ChatsListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F6280C853B003E6E2E /* ChatsListViewOutput.swift */; };
-		EFA37405280C853B003E6E2E /* ChatsListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F7280C853B003E6E2E /* ChatsListViewState.swift */; };
-		EFA37406280C853B003E6E2E /* ChatsListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F9280C853B003E6E2E /* ChatsListConfigurator.swift */; };
-		EFA37407280C853B003E6E2E /* ChatsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373FB280C853B003E6E2E /* ChatsListInteractor.swift */; };
-		EFA37408280C853B003E6E2E /* ChatsListInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373FC280C853B003E6E2E /* ChatsListInteracting.swift */; };
-		EFA37409280C853B003E6E2E /* ChatsListInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373FE280C853B003E6E2E /* ChatsListInput.swift */; };
-		EFA3740A280C853B003E6E2E /* ChatsListOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373FF280C853B003E6E2E /* ChatsListOutput.swift */; };
+		EFA37401280C853B003E6E2E /* SUIVIPERPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F2280C853B003E6E2E /* SUIVIPERPresenter.swift */; };
+		EFA37402280C853B003E6E2E /* SUIVIPERPresenterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F3280C853B003E6E2E /* SUIVIPERPresenterState.swift */; };
+		EFA37403280C853B003E6E2E /* SUIVIPERView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F5280C853B003E6E2E /* SUIVIPERView.swift */; };
+		EFA37404280C853B003E6E2E /* SUIVIPERViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F6280C853B003E6E2E /* SUIVIPERViewOutput.swift */; };
+		EFA37405280C853B003E6E2E /* SUIVIPERViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F7280C853B003E6E2E /* SUIVIPERViewState.swift */; };
+		EFA37406280C853B003E6E2E /* SUIVIPERConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373F9280C853B003E6E2E /* SUIVIPERConfigurator.swift */; };
+		EFA37407280C853B003E6E2E /* SUIVIPERInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373FB280C853B003E6E2E /* SUIVIPERInteractor.swift */; };
+		EFA37408280C853B003E6E2E /* SUIVIPERInteracting.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373FC280C853B003E6E2E /* SUIVIPERInteracting.swift */; };
+		EFA37409280C853B003E6E2E /* SUIVIPERInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373FE280C853B003E6E2E /* SUIVIPERInput.swift */; };
+		EFA3740A280C853B003E6E2E /* SUIVIPEROutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA373FF280C853B003E6E2E /* SUIVIPEROutput.swift */; };
 		EFA3740D280C8667003E6E2E /* PatternHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA3740C280C8667003E6E2E /* PatternHostingController.swift */; };
 		EFCDD7F627EF3965003E522F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD7F527EF3965003E522F /* AppDelegate.swift */; };
 		EFCDD7F827EF3965003E522F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDD7F727EF3965003E522F /* SceneDelegate.swift */; };
@@ -201,12 +201,12 @@
 		EF50A5A72886E3E10081C5BB /* View+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Navigation.swift"; sourceTree = "<group>"; };
 		EF50A5AB2886E5D10081C5BB /* BaseCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinatorView.swift; sourceTree = "<group>"; };
 		EF50A5AD2886E66C0081C5BB /* VIPER.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = VIPER.md; sourceTree = "<group>"; };
-		EF8603E22840E7CF0061A3F9 /* MVPSUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIView.swift; sourceTree = "<group>"; };
-		EF8603E42840E88A0061A3F9 /* MVPSUIViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIViewState.swift; sourceTree = "<group>"; };
-		EF8603E62840E8970061A3F9 /* MVPSUIViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIViewOutput.swift; sourceTree = "<group>"; };
-		EF8603E82840E93F0061A3F9 /* MVPSUIModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIModuleOutput.swift; sourceTree = "<group>"; };
-		EF8603EA2840E96D0061A3F9 /* MVPSUIModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIModuleInput.swift; sourceTree = "<group>"; };
-		EF8603EC2840E98F0061A3F9 /* MVPSUIPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIPresenter.swift; sourceTree = "<group>"; };
+		EF8603E22840E7CF0061A3F9 /* SUIMVPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIMVPView.swift; sourceTree = "<group>"; };
+		EF8603E42840E88A0061A3F9 /* SUIMVPViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIMVPViewState.swift; sourceTree = "<group>"; };
+		EF8603E62840E8970061A3F9 /* SUIMVPViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIMVPViewOutput.swift; sourceTree = "<group>"; };
+		EF8603E82840E93F0061A3F9 /* SUIMVPModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIMVPModuleOutput.swift; sourceTree = "<group>"; };
+		EF8603EA2840E96D0061A3F9 /* SUIMVPModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIMVPModuleInput.swift; sourceTree = "<group>"; };
+		EF8603EC2840E98F0061A3F9 /* SUIMVPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIMVPPresenter.swift; sourceTree = "<group>"; };
 		EF8603EF2840EBC40061A3F9 /* SUICoordinatorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUICoordinatorObject.swift; sourceTree = "<group>"; };
 		EFA373AA280C7DAD003E6E2E /* PatternUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PatternUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA373AC280C7DAD003E6E2E /* PatternUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatternUI.h; sourceTree = "<group>"; };
@@ -220,16 +220,16 @@
 		EFA373DB280C8042003E6E2E /* PatternModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatternModels.h; sourceTree = "<group>"; };
 		EFA373DC280C8042003E6E2E /* PatternModels.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PatternModels.docc; sourceTree = "<group>"; };
 		EFA373EC280C812C003E6E2E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		EFA373F2280C853B003E6E2E /* ChatsListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListPresenter.swift; sourceTree = "<group>"; };
-		EFA373F3280C853B003E6E2E /* ChatsListPresenterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListPresenterState.swift; sourceTree = "<group>"; };
-		EFA373F5280C853B003E6E2E /* ChatsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListView.swift; sourceTree = "<group>"; };
-		EFA373F6280C853B003E6E2E /* ChatsListViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListViewOutput.swift; sourceTree = "<group>"; };
-		EFA373F7280C853B003E6E2E /* ChatsListViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListViewState.swift; sourceTree = "<group>"; };
-		EFA373F9280C853B003E6E2E /* ChatsListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListConfigurator.swift; sourceTree = "<group>"; };
-		EFA373FB280C853B003E6E2E /* ChatsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListInteractor.swift; sourceTree = "<group>"; };
-		EFA373FC280C853B003E6E2E /* ChatsListInteracting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListInteracting.swift; sourceTree = "<group>"; };
-		EFA373FE280C853B003E6E2E /* ChatsListInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListInput.swift; sourceTree = "<group>"; };
-		EFA373FF280C853B003E6E2E /* ChatsListOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsListOutput.swift; sourceTree = "<group>"; };
+		EFA373F2280C853B003E6E2E /* SUIVIPERPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUIVIPERPresenter.swift; sourceTree = "<group>"; };
+		EFA373F3280C853B003E6E2E /* SUIVIPERPresenterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUIVIPERPresenterState.swift; sourceTree = "<group>"; };
+		EFA373F5280C853B003E6E2E /* SUIVIPERView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUIVIPERView.swift; sourceTree = "<group>"; };
+		EFA373F6280C853B003E6E2E /* SUIVIPERViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUIVIPERViewOutput.swift; sourceTree = "<group>"; };
+		EFA373F7280C853B003E6E2E /* SUIVIPERViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUIVIPERViewState.swift; sourceTree = "<group>"; };
+		EFA373F9280C853B003E6E2E /* SUIVIPERConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUIVIPERConfigurator.swift; sourceTree = "<group>"; };
+		EFA373FB280C853B003E6E2E /* SUIVIPERInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUIVIPERInteractor.swift; sourceTree = "<group>"; };
+		EFA373FC280C853B003E6E2E /* SUIVIPERInteracting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUIVIPERInteracting.swift; sourceTree = "<group>"; };
+		EFA373FE280C853B003E6E2E /* SUIVIPERInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUIVIPERInput.swift; sourceTree = "<group>"; };
+		EFA373FF280C853B003E6E2E /* SUIVIPEROutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUIVIPEROutput.swift; sourceTree = "<group>"; };
 		EFA3740C280C8667003E6E2E /* PatternHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternHostingController.swift; sourceTree = "<group>"; };
 		EFCDD7F227EF3965003E522F /* iOSPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCDD7F527EF3965003E522F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -343,14 +343,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EF0B174229F6B76D002A3C6D /* SUINavigationPath */ = {
+		EF0B174229F6B76D002A3C6D /* SUI+NavigationPath */ = {
 			isa = PBXGroup;
 			children = (
 				EF0B174329F6B786002A3C6D /* SUINavigationPathCoordinatorObject.swift */,
 				EF0B174529F6B7F0002A3C6D /* SUINavigationPathCoordinatorView.swift */,
 				EF0B174729F6BD17002A3C6D /* Helpers */,
 			);
-			path = SUINavigationPath;
+			path = "SUI+NavigationPath";
 			sourceTree = "<group>";
 		};
 		EF0B174729F6BD17002A3C6D /* Helpers */ = {
@@ -370,21 +370,21 @@
 			path = SwiftUI;
 			sourceTree = "<group>";
 		};
-		EF8603DE2840E7650061A3F9 /* MVP+SUI */ = {
+		EF8603DE2840E7650061A3F9 /* SUI+MVP */ = {
 			isa = PBXGroup;
 			children = (
 				EF8603E12840E77A0061A3F9 /* View */,
 				EF8603E02840E7750061A3F9 /* Presenter */,
 				EF8603DF2840E76E0061A3F9 /* Router */,
 			);
-			path = "MVP+SUI";
+			path = "SUI+MVP";
 			sourceTree = "<group>";
 		};
 		EF8603DF2840E76E0061A3F9 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				EF8603E82840E93F0061A3F9 /* MVPSUIModuleOutput.swift */,
-				EF8603EA2840E96D0061A3F9 /* MVPSUIModuleInput.swift */,
+				EF8603E82840E93F0061A3F9 /* SUIMVPModuleOutput.swift */,
+				EF8603EA2840E96D0061A3F9 /* SUIMVPModuleInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -392,7 +392,7 @@
 		EF8603E02840E7750061A3F9 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				EF8603EC2840E98F0061A3F9 /* MVPSUIPresenter.swift */,
+				EF8603EC2840E98F0061A3F9 /* SUIMVPPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -400,20 +400,20 @@
 		EF8603E12840E77A0061A3F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EF8603E22840E7CF0061A3F9 /* MVPSUIView.swift */,
-				EF8603E42840E88A0061A3F9 /* MVPSUIViewState.swift */,
-				EF8603E62840E8970061A3F9 /* MVPSUIViewOutput.swift */,
+				EF8603E22840E7CF0061A3F9 /* SUIMVPView.swift */,
+				EF8603E42840E88A0061A3F9 /* SUIMVPViewState.swift */,
+				EF8603E62840E8970061A3F9 /* SUIMVPViewOutput.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		EF8603EE2840EBB60061A3F9 /* SUICoordinator */ = {
+		EF8603EE2840EBB60061A3F9 /* SUI+Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 				EF8603EF2840EBC40061A3F9 /* SUICoordinatorObject.swift */,
 				EF50A5A52886E2EC0081C5BB /* SUICoordinatorView.swift */,
 			);
-			path = SUICoordinator;
+			path = "SUI+Coordinator";
 			sourceTree = "<group>";
 		};
 		EFA373AB280C7DAD003E6E2E /* PatternUI */ = {
@@ -470,32 +470,24 @@
 			path = PatternModels;
 			sourceTree = "<group>";
 		};
-		EFA373EE280C8401003E6E2E /* VIPER */ = {
+		EFA373EE280C8401003E6E2E /* SUI+VIPER */ = {
 			isa = PBXGroup;
 			children = (
 				EF50A5AD2886E66C0081C5BB /* VIPER.md */,
-				EFA373F0280C853B003E6E2E /* ChatsList */,
-			);
-			path = VIPER;
-			sourceTree = "<group>";
-		};
-		EFA373F0280C853B003E6E2E /* ChatsList */ = {
-			isa = PBXGroup;
-			children = (
 				EFA373F1280C853B003E6E2E /* Presenter */,
 				EFA373F4280C853B003E6E2E /* View */,
 				EFA373F8280C853B003E6E2E /* Configurator */,
 				EFA373FA280C853B003E6E2E /* Interactor */,
 				EFA373FD280C853B003E6E2E /* Router */,
 			);
-			path = ChatsList;
+			path = "SUI+VIPER";
 			sourceTree = "<group>";
 		};
 		EFA373F1280C853B003E6E2E /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				EFA373F2280C853B003E6E2E /* ChatsListPresenter.swift */,
-				EFA373F3280C853B003E6E2E /* ChatsListPresenterState.swift */,
+				EFA373F2280C853B003E6E2E /* SUIVIPERPresenter.swift */,
+				EFA373F3280C853B003E6E2E /* SUIVIPERPresenterState.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -503,9 +495,9 @@
 		EFA373F4280C853B003E6E2E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EFA373F5280C853B003E6E2E /* ChatsListView.swift */,
-				EFA373F6280C853B003E6E2E /* ChatsListViewOutput.swift */,
-				EFA373F7280C853B003E6E2E /* ChatsListViewState.swift */,
+				EFA373F5280C853B003E6E2E /* SUIVIPERView.swift */,
+				EFA373F6280C853B003E6E2E /* SUIVIPERViewOutput.swift */,
+				EFA373F7280C853B003E6E2E /* SUIVIPERViewState.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -513,7 +505,7 @@
 		EFA373F8280C853B003E6E2E /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				EFA373F9280C853B003E6E2E /* ChatsListConfigurator.swift */,
+				EFA373F9280C853B003E6E2E /* SUIVIPERConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -521,8 +513,8 @@
 		EFA373FA280C853B003E6E2E /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				EFA373FB280C853B003E6E2E /* ChatsListInteractor.swift */,
-				EFA373FC280C853B003E6E2E /* ChatsListInteracting.swift */,
+				EFA373FB280C853B003E6E2E /* SUIVIPERInteractor.swift */,
+				EFA373FC280C853B003E6E2E /* SUIVIPERInteracting.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -530,8 +522,8 @@
 		EFA373FD280C853B003E6E2E /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				EFA373FE280C853B003E6E2E /* ChatsListInput.swift */,
-				EFA373FF280C853B003E6E2E /* ChatsListOutput.swift */,
+				EFA373FE280C853B003E6E2E /* SUIVIPERInput.swift */,
+				EFA373FF280C853B003E6E2E /* SUIVIPEROutput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -578,7 +570,6 @@
 			isa = PBXGroup;
 			children = (
 				EFCDD7F927EF3965003E522F /* RootViewController.swift */,
-				EF0B174229F6B76D002A3C6D /* SUINavigationPath */,
 				EFCDD8A127EF700B003E522F /* Modules */,
 			);
 			path = Patterns;
@@ -741,9 +732,10 @@
 		EFCDD8A127EF700B003E522F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				EF8603EE2840EBB60061A3F9 /* SUICoordinator */,
-				EF8603DE2840E7650061A3F9 /* MVP+SUI */,
-				EFA373EE280C8401003E6E2E /* VIPER */,
+				EF0B174229F6B76D002A3C6D /* SUI+NavigationPath */,
+				EF8603EE2840EBB60061A3F9 /* SUI+Coordinator */,
+				EF8603DE2840E7650061A3F9 /* SUI+MVP */,
+				EFA373EE280C8401003E6E2E /* SUI+VIPER */,
 				EFCDD87E27EF670F003E522F /* MVVM+Rx */,
 			);
 			path = Modules;
@@ -1171,34 +1163,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFA37408280C853B003E6E2E /* ChatsListInteracting.swift in Sources */,
+				EFA37408280C853B003E6E2E /* SUIVIPERInteracting.swift in Sources */,
 				EFCDD88027EF673B003E522F /* NotesViewModel.swift in Sources */,
-				EF8603EB2840E96D0061A3F9 /* MVPSUIModuleInput.swift in Sources */,
+				EF8603EB2840E96D0061A3F9 /* SUIMVPModuleInput.swift in Sources */,
 				EF0B174429F6B786002A3C6D /* SUINavigationPathCoordinatorObject.swift in Sources */,
 				EFCDD88227EF6750003E522F /* NotesViewController.swift in Sources */,
 				EF8603F02840EBC40061A3F9 /* SUICoordinatorObject.swift in Sources */,
-				EFA37405280C853B003E6E2E /* ChatsListViewState.swift in Sources */,
+				EFA37405280C853B003E6E2E /* SUIVIPERViewState.swift in Sources */,
 				EF0B174929F6BD20002A3C6D /* ScreensContainer.swift in Sources */,
-				EFA37403280C853B003E6E2E /* ChatsListView.swift in Sources */,
-				EFA37407280C853B003E6E2E /* ChatsListInteractor.swift in Sources */,
-				EFA37401280C853B003E6E2E /* ChatsListPresenter.swift in Sources */,
+				EFA37403280C853B003E6E2E /* SUIVIPERView.swift in Sources */,
+				EFA37407280C853B003E6E2E /* SUIVIPERInteractor.swift in Sources */,
+				EFA37401280C853B003E6E2E /* SUIVIPERPresenter.swift in Sources */,
 				EFCDD7FA27EF3965003E522F /* RootViewController.swift in Sources */,
 				EFCDD7F627EF3965003E522F /* AppDelegate.swift in Sources */,
-				EF8603E72840E8970061A3F9 /* MVPSUIViewOutput.swift in Sources */,
+				EF8603E72840E8970061A3F9 /* SUIMVPViewOutput.swift in Sources */,
 				EF50A5A62886E2EC0081C5BB /* SUICoordinatorView.swift in Sources */,
-				EFA37404280C853B003E6E2E /* ChatsListViewOutput.swift in Sources */,
+				EFA37404280C853B003E6E2E /* SUIVIPERViewOutput.swift in Sources */,
 				EF0B174629F6B7F0002A3C6D /* SUINavigationPathCoordinatorView.swift in Sources */,
 				EFCDD7F827EF3965003E522F /* SceneDelegate.swift in Sources */,
 				EFCDD88527EF6789003E522F /* NoteTableViewCell.swift in Sources */,
-				EF8603E52840E88B0061A3F9 /* MVPSUIViewState.swift in Sources */,
-				EF8603E32840E7CF0061A3F9 /* MVPSUIView.swift in Sources */,
-				EF8603E92840E93F0061A3F9 /* MVPSUIModuleOutput.swift in Sources */,
-				EF8603ED2840E98F0061A3F9 /* MVPSUIPresenter.swift in Sources */,
-				EFA37402280C853B003E6E2E /* ChatsListPresenterState.swift in Sources */,
+				EF8603E52840E88B0061A3F9 /* SUIMVPViewState.swift in Sources */,
+				EF8603E32840E7CF0061A3F9 /* SUIMVPView.swift in Sources */,
+				EF8603E92840E93F0061A3F9 /* SUIMVPModuleOutput.swift in Sources */,
+				EF8603ED2840E98F0061A3F9 /* SUIMVPPresenter.swift in Sources */,
+				EFA37402280C853B003E6E2E /* SUIVIPERPresenterState.swift in Sources */,
 				EFA373B9280C7DF1003E6E2E /* ModulesFactory.swift in Sources */,
-				EFA37409280C853B003E6E2E /* ChatsListInput.swift in Sources */,
-				EFA37406280C853B003E6E2E /* ChatsListConfigurator.swift in Sources */,
-				EFA3740A280C853B003E6E2E /* ChatsListOutput.swift in Sources */,
+				EFA37409280C853B003E6E2E /* SUIVIPERInput.swift in Sources */,
+				EFA37406280C853B003E6E2E /* SUIVIPERConfigurator.swift in Sources */,
+				EFA3740A280C853B003E6E2E /* SUIVIPEROutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

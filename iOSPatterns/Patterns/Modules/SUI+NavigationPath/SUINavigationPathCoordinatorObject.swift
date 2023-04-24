@@ -12,7 +12,7 @@ import PatternFoundation
 @available(iOS 16.0, *)
 class SUINavigationPathCoordinatorObject: ObservableObject {
     @Published var path: NavigationPath = .init()
-    @Published var rootView: BaseCoordinatorView<MVPSUIView, MVPSUIModuleInput>?
+    @Published var rootView: BaseCoordinatorView<SUIMVPView, SUIMVPModuleInput>?
     
     private let modulesFactory: ModulesFactorable
 
@@ -29,12 +29,12 @@ class SUINavigationPathCoordinatorObject: ObservableObject {
 @available(iOS 16.0, *)
 extension SUINavigationPathCoordinatorObject {
     enum ScreenType: ScreensContainer {
-        case first(MVPSUIModule)
+        case first(SUIMVPModule)
     }
 }
 
 @available(iOS 16.0, *)
-extension SUINavigationPathCoordinatorObject: MVPSUIModuleOutput {
+extension SUINavigationPathCoordinatorObject: SUIMVPModuleOutput {
     func moduleDidFinishWork(with index: Int) {
         let module = modulesFactory.mvpsuiModule(output: self)
         module.input.updateViewIndex(int: index)

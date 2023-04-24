@@ -11,8 +11,8 @@ import PatternFoundation
 class SUICoordinatorObject: ObservableObject {
     private let modulesFactory: ModulesFactorable
     
-    @Published var rootView: BaseCoordinatorView<MVPSUIView, MVPSUIModuleInput>?
-    @Published var secondView: BaseCoordinatorView<MVPSUIView, MVPSUIModuleInput>?
+    @Published var rootView: BaseCoordinatorView<SUIMVPView, SUIMVPModuleInput>?
+    @Published var secondView: BaseCoordinatorView<SUIMVPView, SUIMVPModuleInput>?
     
     init(modulesFactory: ModulesFactorable) {
         self.modulesFactory = modulesFactory
@@ -24,9 +24,9 @@ class SUICoordinatorObject: ObservableObject {
     }
 }
 
-// MARK: - MVPSUIModuleOutput
+// MARK: - SUIMVPModuleOutput
 
-extension SUICoordinatorObject: MVPSUIModuleOutput {
+extension SUICoordinatorObject: SUIMVPModuleOutput {
     func moduleDidFinishWork(with index: Int) {
         let (view, input) = modulesFactory.mvpsuiModule(output: self)
         // Any updates view before show
