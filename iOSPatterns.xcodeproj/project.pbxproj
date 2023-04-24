@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF0B174429F6B786002A3C6D /* SUINavigationPathCoordinatorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0B174329F6B786002A3C6D /* SUINavigationPathCoordinatorObject.swift */; };
+		EF0B174629F6B7F0002A3C6D /* SUINavigationPathCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0B174529F6B7F0002A3C6D /* SUINavigationPathCoordinatorView.swift */; };
+		EF0B174929F6BD20002A3C6D /* ScreensContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0B174829F6BD20002A3C6D /* ScreensContainer.swift */; };
 		EF50A5A62886E2EC0081C5BB /* SUICoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50A5A52886E2EC0081C5BB /* SUICoordinatorView.swift */; };
 		EF50A5A82886E3E10081C5BB /* View+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50A5A72886E3E10081C5BB /* View+Navigation.swift */; };
 		EF50A5AC2886E5D10081C5BB /* BaseCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50A5AB2886E5D10081C5BB /* BaseCoordinatorView.swift */; };
 		EF8603E32840E7CF0061A3F9 /* MVPSUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E22840E7CF0061A3F9 /* MVPSUIView.swift */; };
 		EF8603E52840E88B0061A3F9 /* MVPSUIViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E42840E88A0061A3F9 /* MVPSUIViewState.swift */; };
 		EF8603E72840E8970061A3F9 /* MVPSUIViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E62840E8970061A3F9 /* MVPSUIViewOutput.swift */; };
-		EF8603E92840E93F0061A3F9 /* MVPSUIOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E82840E93F0061A3F9 /* MVPSUIOutput.swift */; };
-		EF8603EB2840E96D0061A3F9 /* MVPSUIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603EA2840E96D0061A3F9 /* MVPSUIInput.swift */; };
+		EF8603E92840E93F0061A3F9 /* MVPSUIModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603E82840E93F0061A3F9 /* MVPSUIModuleOutput.swift */; };
+		EF8603EB2840E96D0061A3F9 /* MVPSUIModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603EA2840E96D0061A3F9 /* MVPSUIModuleInput.swift */; };
 		EF8603ED2840E98F0061A3F9 /* MVPSUIPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603EC2840E98F0061A3F9 /* MVPSUIPresenter.swift */; };
 		EF8603F02840EBC40061A3F9 /* SUICoordinatorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8603EF2840EBC40061A3F9 /* SUICoordinatorObject.swift */; };
 		EF8604032840F5640061A3F9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EF8604022840F5640061A3F9 /* SnapKit */; };
@@ -191,6 +194,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EF0B174329F6B786002A3C6D /* SUINavigationPathCoordinatorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUINavigationPathCoordinatorObject.swift; sourceTree = "<group>"; };
+		EF0B174529F6B7F0002A3C6D /* SUINavigationPathCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUINavigationPathCoordinatorView.swift; sourceTree = "<group>"; };
+		EF0B174829F6BD20002A3C6D /* ScreensContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreensContainer.swift; sourceTree = "<group>"; };
 		EF50A5A52886E2EC0081C5BB /* SUICoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUICoordinatorView.swift; sourceTree = "<group>"; };
 		EF50A5A72886E3E10081C5BB /* View+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Navigation.swift"; sourceTree = "<group>"; };
 		EF50A5AB2886E5D10081C5BB /* BaseCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinatorView.swift; sourceTree = "<group>"; };
@@ -198,8 +204,8 @@
 		EF8603E22840E7CF0061A3F9 /* MVPSUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIView.swift; sourceTree = "<group>"; };
 		EF8603E42840E88A0061A3F9 /* MVPSUIViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIViewState.swift; sourceTree = "<group>"; };
 		EF8603E62840E8970061A3F9 /* MVPSUIViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIViewOutput.swift; sourceTree = "<group>"; };
-		EF8603E82840E93F0061A3F9 /* MVPSUIOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIOutput.swift; sourceTree = "<group>"; };
-		EF8603EA2840E96D0061A3F9 /* MVPSUIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIInput.swift; sourceTree = "<group>"; };
+		EF8603E82840E93F0061A3F9 /* MVPSUIModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIModuleOutput.swift; sourceTree = "<group>"; };
+		EF8603EA2840E96D0061A3F9 /* MVPSUIModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIModuleInput.swift; sourceTree = "<group>"; };
 		EF8603EC2840E98F0061A3F9 /* MVPSUIPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSUIPresenter.swift; sourceTree = "<group>"; };
 		EF8603EF2840EBC40061A3F9 /* SUICoordinatorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUICoordinatorObject.swift; sourceTree = "<group>"; };
 		EFA373AA280C7DAD003E6E2E /* PatternUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PatternUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -337,6 +343,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF0B174229F6B76D002A3C6D /* SUINavigationPath */ = {
+			isa = PBXGroup;
+			children = (
+				EF0B174329F6B786002A3C6D /* SUINavigationPathCoordinatorObject.swift */,
+				EF0B174529F6B7F0002A3C6D /* SUINavigationPathCoordinatorView.swift */,
+				EF0B174729F6BD17002A3C6D /* Helpers */,
+			);
+			path = SUINavigationPath;
+			sourceTree = "<group>";
+		};
+		EF0B174729F6BD17002A3C6D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF0B174829F6BD20002A3C6D /* ScreensContainer.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		EF50A5A92886E3EB0081C5BB /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,8 +383,8 @@
 		EF8603DF2840E76E0061A3F9 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				EF8603E82840E93F0061A3F9 /* MVPSUIOutput.swift */,
-				EF8603EA2840E96D0061A3F9 /* MVPSUIInput.swift */,
+				EF8603E82840E93F0061A3F9 /* MVPSUIModuleOutput.swift */,
+				EF8603EA2840E96D0061A3F9 /* MVPSUIModuleInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -554,6 +578,7 @@
 			isa = PBXGroup;
 			children = (
 				EFCDD7F927EF3965003E522F /* RootViewController.swift */,
+				EF0B174229F6B76D002A3C6D /* SUINavigationPath */,
 				EFCDD8A127EF700B003E522F /* Modules */,
 			);
 			path = Patterns;
@@ -1148,10 +1173,12 @@
 			files = (
 				EFA37408280C853B003E6E2E /* ChatsListInteracting.swift in Sources */,
 				EFCDD88027EF673B003E522F /* NotesViewModel.swift in Sources */,
-				EF8603EB2840E96D0061A3F9 /* MVPSUIInput.swift in Sources */,
+				EF8603EB2840E96D0061A3F9 /* MVPSUIModuleInput.swift in Sources */,
+				EF0B174429F6B786002A3C6D /* SUINavigationPathCoordinatorObject.swift in Sources */,
 				EFCDD88227EF6750003E522F /* NotesViewController.swift in Sources */,
 				EF8603F02840EBC40061A3F9 /* SUICoordinatorObject.swift in Sources */,
 				EFA37405280C853B003E6E2E /* ChatsListViewState.swift in Sources */,
+				EF0B174929F6BD20002A3C6D /* ScreensContainer.swift in Sources */,
 				EFA37403280C853B003E6E2E /* ChatsListView.swift in Sources */,
 				EFA37407280C853B003E6E2E /* ChatsListInteractor.swift in Sources */,
 				EFA37401280C853B003E6E2E /* ChatsListPresenter.swift in Sources */,
@@ -1160,11 +1187,12 @@
 				EF8603E72840E8970061A3F9 /* MVPSUIViewOutput.swift in Sources */,
 				EF50A5A62886E2EC0081C5BB /* SUICoordinatorView.swift in Sources */,
 				EFA37404280C853B003E6E2E /* ChatsListViewOutput.swift in Sources */,
+				EF0B174629F6B7F0002A3C6D /* SUINavigationPathCoordinatorView.swift in Sources */,
 				EFCDD7F827EF3965003E522F /* SceneDelegate.swift in Sources */,
 				EFCDD88527EF6789003E522F /* NoteTableViewCell.swift in Sources */,
 				EF8603E52840E88B0061A3F9 /* MVPSUIViewState.swift in Sources */,
 				EF8603E32840E7CF0061A3F9 /* MVPSUIView.swift in Sources */,
-				EF8603E92840E93F0061A3F9 /* MVPSUIOutput.swift in Sources */,
+				EF8603E92840E93F0061A3F9 /* MVPSUIModuleOutput.swift in Sources */,
 				EF8603ED2840E98F0061A3F9 /* MVPSUIPresenter.swift in Sources */,
 				EFA37402280C853B003E6E2E /* ChatsListPresenterState.swift in Sources */,
 				EFA373B9280C7DF1003E6E2E /* ModulesFactory.swift in Sources */,
@@ -1603,7 +1631,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1632,7 +1660,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -8,6 +8,13 @@
 import Combine
 import SwiftUI
 
+struct TextModel: Hashable {
+    let text: String
+    let color: Color
+}
+
 class MVPSUIViewState: ObservableObject {
     @Published var viewIndex: Int = 0
+    
+    @Published var viewModels: [TextModel] = []
 }
